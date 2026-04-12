@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,15 +19,15 @@
             --border: #4a7aaa;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        /* scroll handled below */
+        html { scroll-behavior: smooth; }
         body { font-family: 'Source Sans 3', sans-serif; background-color: var(--light-bg); color: var(--text-dark); line-height: 1.7; }
 
         /* NAV */
-        nav { position: sticky; top: 0; background: #0a2e1a; border-bottom: 2px solid #1a7a50; padding: 6px 20px; z-index: 1000; display: grid; grid-template-columns: 110px 1fr 110px; align-items: center; }
+        nav { position: sticky; top: 0; background: #0a2e1a; border-bottom: 2px solid #1a7a50; padding: 6px 20px; z-index: 1000; display: grid; grid-template-columns: 90px 1fr 90px; align-items: center; }
         .nav-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-        nav a { color: #d4f0e4; text-decoration: none; font-size: 16px; font-weight: 700; letter-spacing: 0.6px; transition: color 0.15s; padding: 6px 0; }
+        nav a { color: #d4f0e4; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 0.5px; transition: color 0.15s; padding: 6px 0; }
         nav a:hover { color: #6ddba8; }
-        .nav-logo { width: 90px; height: 90px; border-radius: 50%; background: #fff; padding: 4px; box-shadow: 0 3px 18px rgba(0,0,0,0.50); object-fit: contain; display: block; }
+        .nav-logo { width: 70px; height: 70px; border-radius: 50%; background: #fff; padding: 4px; box-shadow: 0 3px 14px rgba(0,0,0,0.45); object-fit: contain; display: block; }
 
         /* HEADER */
         header { background: linear-gradient(135deg, #0a2e1a 0%, #0e5c34 60%, #075754 100%); color: var(--white); padding: 64px 20px 56px; text-align: center; position: relative; overflow: hidden; }
@@ -144,53 +144,15 @@
         /* FOOTER */
         footer { text-align: center; padding: 28px 20px; background: #0b2a5e; color: #ffffff; font-size: 15px; margin-top: 0; border-top: 3px solid #1a6bbf; letter-spacing: 0.3px; }
         footer span { color: #f5c842; font-weight: 700; }
-    
-        /* ══ READABILITY & CONTRAST ══ */
-        html            { scroll-behavior: smooth; scroll-padding-top: 90px; }
-        body            { font-size: 16px; line-height: 1.82; }
-        p               { font-size: 16px; color: #091420; margin-bottom: 16px; }
-        h2              { font-size: 26px; margin-bottom: 22px; }
-        nav a           { font-size: 15px; }
-        ul.styled li    { font-size: 15.5px; line-height: 1.7; }
-        ul.compact li   { font-size: 14.5px; }
-        .serve-block p  { font-size: 15px; line-height: 1.65; }
-        .struct-block ul li { font-size: 15px; }
-        .card           { padding: 42px 48px; }
-        .container      { gap: 38px; }
-        .highlight-box p                    { color: #e8f2ff; font-size: 15.5px; }
-        .contact-section .contact-sub       { color: #daeeff; font-size: 16px; }
-        .contact-info-item span             { color: #edf6ff; font-size: 15px; }
-        .contact-info-item strong           { font-size: 15px; }
-        .form-group label                   { font-size: 14px; color: #d8ecff; }
-
-        /* ══ HERO STATS ══ */
-        .hero-stats { background: #071f12; border-bottom: 2px solid #1c8a5a; }
-        .hero-stats-inner {
-            max-width: 1040px; margin: 0 auto; padding: 0 24px;
-            display: grid; grid-template-columns: repeat(4, 1fr);
-        }
-        .stat-item {
-            padding: 26px 16px; text-align: center;
-            border-right: 1px solid rgba(255,255,255,0.08);
-        }
-        .stat-item:last-child { border-right: none; }
-        .stat-num {
-            display: block; font-family: 'Playfair Display', serif;
-            font-size: 34px; font-weight: 700; color: #6ddba8; line-height: 1.1;
-        }
-        .stat-label {
-            display: block; font-size: 11px; letter-spacing: 1.8px;
-            text-transform: uppercase; color: #a8f0cc; margin-top: 6px; font-weight: 600;
-        }
-        @media (max-width: 600px) { .hero-stats-inner { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 680px) { #about > div:nth-child(2), #about > div:nth-child(3) { grid-template-columns: 1fr !important; } }
-</style>
+    </style>
 </head>
 <body>
 
 <nav>
-    <img src="logo.png" alt="GIAA Logo" class="nav-logo">
-    <div class="nav-links"><a href="#about">About GIAA</a>
+    <img src="logo_giaa.png" alt="GIAA Logo" class="nav-logo">
+    <div class="nav-links"><a href="#description">About</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#serves">Who We Serve</a>
     <a href="#functions">Model</a>
     <a href="#process">Process</a>
     <a href="#structure">Structure</a>
@@ -204,137 +166,148 @@
     <p class="tagline">"Impact beyond Exit."</p>
     <p class="header-sub">Global Adoption &nbsp;·&nbsp; Sustainability &nbsp;·&nbsp; Long-Term Impact</p>
 </header>
-<div class="hero-stats" role="region" aria-label="GIAA at a glance">
-  <div class="hero-stats-inner">
-    <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">Global Sectors</span></div>
-    <div class="stat-item"><span class="stat-num">Dual</span><span class="stat-label">Funding Streams</span></div>
-    <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Project Continuity</span></div>
-    <div class="stat-item"><span class="stat-num">NIAC</span><span class="stat-label">Country Office Network</span></div>
-  </div>
-</div>
 
 <div class="container">
 
-    <!-- About GIAA — merged summary -->
-    <div id="about" style="border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(4,21,43,0.13);">
-
-        <!-- Top: Who we are -->
-        <div style="background:linear-gradient(135deg,#0a2e1a 0%,#0b3860 100%);padding:48px 44px;">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#6ddba8;margin-bottom:12px;">About GIAA</p>
-            <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(22px,3vw,30px);line-height:1.3;margin-bottom:18px;">Bridging the Gap Between Project Exit and Lasting Impact</h2>
-            <p style="color:#e8f8f2;font-size:16px;line-height:1.8;max-width:820px;margin-bottom:0;">
-                GIAA is a Canada-based nonprofit addressing the most overlooked gap in global development:
-                <strong style="color:#ffffff;">the lack of continuity after funding ends.</strong>
-                Most development projects achieve strong results during implementation — then disappear.
-                Communities are left without services. Investments are lost. GIAA exists to change that.
-            </p>
+    <!-- Description -->
+    <div id="description" style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(4,21,43,0.13);">
+        <div style="background:linear-gradient(160deg,#0a2e1a 0%,#0b3860 100%);padding:44px 40px;display:flex;flex-direction:column;justify-content:center;">
+            <p style="font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#6ddba8;margin-bottom:14px;">Who We Are</p>
+            <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(20px,2.8vw,28px);line-height:1.3;margin-bottom:18px;">Bridging the Gap Between Project Exit and Lasting Impact</h2>
+            <p style="color:#e8f8f2;font-size:15px;line-height:1.8;margin-bottom:16px;">GIAA is a Canada-based nonprofit addressing the most overlooked gap in global development: <strong style="color:#ffffff;">the lack of continuity after funding ends.</strong></p>
+            <p style="color:#d0f0e4;font-size:14px;line-height:1.75;margin:0;">As a lifecycle partner, GIAA engages from MoU design through implementation, transition, and long-term adoption — ensuring development investments deliver sustained, measurable, and scalable impact.</p>
         </div>
-
-        <!-- Problem vs Response -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;background:#f8fbf9;">
-            <div style="padding:36px 40px;border-right:1px solid #dde8e2;">
-                <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c04040;margin-bottom:10px;">The Challenge</p>
-                <h3 style="font-family:'Playfair Display',serif;color:#0a1520;font-size:18px;margin-bottom:14px;">The Post-Project Sustainability Gap</h3>
-                <p style="color:#2a3a4a;font-size:15px;line-height:1.75;margin-bottom:16px;">
-                    Across agriculture, education, health, and environment — most projects are funded for 2–5 years.
-                    When funding ends, the communities they served are often left behind.
-                </p>
-                <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;">
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#c04040;font-weight:700;">✗</span> No structured exit or handover plans</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#c04040;font-weight:700;">✗</span> Local capacity rarely built during implementation</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#c04040;font-weight:700;">✗</span> Infrastructure abandoned, services discontinued</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#c04040;font-weight:700;">✗</span> Development investment fails to deliver its full return</li>
-                </ul>
+        <div style="background:#f8fbf9;padding:44px 36px;display:flex;flex-direction:column;gap:20px;justify-content:center;">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:44px;height:44px;border-radius:10px;background:#0a2e1a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px;">🔗</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;font-weight:700;display:block;margin-bottom:4px;">Full Lifecycle Presence</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">From MoU design to long-term adoption — present at every stage, not just implementation.</span></div>
             </div>
-            <div style="padding:36px 40px;background:#f0f7f4;">
-                <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0b7a75;margin-bottom:10px;">The GIAA Response</p>
-                <h3 style="font-family:'Playfair Display',serif;color:#0a1520;font-size:18px;margin-bottom:14px;">Lifecycle Continuity, Not Just Delivery</h3>
-                <p style="color:#2a3a4a;font-size:15px;line-height:1.75;margin-bottom:16px;">
-                    GIAA operates as a full lifecycle partner — present from MoU design through transition and long-term adoption,
-                    through NIACs embedded in each country.
-                </p>
-                <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;">
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#0b7a75;font-weight:700;">✓</span> Structured adoption at project close</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#0b7a75;font-weight:700;">✓</span> Dedicated sector specialists per country</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#0b7a75;font-weight:700;">✓</span> Self-sustaining sector continuity fund</li>
-                    <li style="color:#2a3a4a;font-size:14px;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#0b7a75;font-weight:700;">✓</span> Impact verified at 1, 3, and 5 years</li>
-                </ul>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:44px;height:44px;border-radius:10px;background:#0b4280;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px;">🌍</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;font-weight:700;display:block;margin-bottom:4px;">Global Reach, Country-Level Action</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Operates through NIACs — National Impact Adoption Centres — embedded in each country.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:44px;height:44px;border-radius:10px;background:#0b7a75;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px;">📈</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;font-weight:700;display:block;margin-bottom:4px;">Measurable, Verifiable Impact</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Impact validated at 1, 3, and 5 years — not reported once at project close.</span></div>
             </div>
         </div>
+    </div>
 
-        <!-- Vision + Mission -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;">
-            <div style="background:var(--navy);padding:32px 40px;border-right:1px solid rgba(255,255,255,0.08);">
-                <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6ddba8;margin-bottom:8px;">Vision</p>
-                <p style="color:#e8f2ff;font-size:15px;line-height:1.75;margin:0;">A world where development projects continue delivering impact beyond their initial lifecycle — <strong style="color:#f5c842;">sustainable, scalable, and community-owned.</strong></p>
+    <!-- The Problem -->
+    <div id="problem" style="background:linear-gradient(135deg,#0d1b2a 0%,#1a2e40 100%);border-radius:14px;padding:48px 44px;box-shadow:0 4px 24px rgba(4,21,43,0.2);">
+        <p style="font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#e07070;margin-bottom:12px;">The Challenge</p>
+        <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(20px,2.8vw,26px);margin-bottom:10px;">The Post-Project Sustainability Gap</h2>
+        <p style="color:#dceef8;font-size:15px;line-height:1.8;max-width:760px;margin-bottom:36px;">Across agriculture, education, health and environment, most development projects are funded for 2–5 years. Many achieve strong results during implementation — then disappear. The communities they served are left without services. The investments are lost.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px;">
+            <div style="background:rgba(220,60,60,0.1);border-left:4px solid #c04040;border-radius:8px;padding:18px 20px;">
+                <strong style="color:#ffaaaa;font-size:13px;display:block;margin-bottom:6px;">No structured exit strategies</strong>
+                <p style="color:#ffffff;font-size:13px;line-height:1.65;margin:0;">Projects wind down without a plan to sustain outcomes or transfer ownership to local systems.</p>
             </div>
-            <div style="background:#0b4280;padding:32px 40px;">
-                <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#a8d4ff;margin-bottom:8px;">Mission</p>
-                <p style="color:#e8f2ff;font-size:15px;line-height:1.75;margin:0;">To serve as a <strong style="color:#ffffff;">transition and continuity platform</strong> — ensuring seamless handover, sustained operations, and long-term adoption across five global development sectors.</p>
+            <div style="background:rgba(220,60,60,0.1);border-left:4px solid #c04040;border-radius:8px;padding:18px 20px;">
+                <strong style="color:#ffaaaa;font-size:13px;display:block;margin-bottom:6px;">Weak transition planning</strong>
+                <p style="color:#ffffff;font-size:13px;line-height:1.65;margin:0;">Poor coordination between funders, implementers, and local governments at project closure.</p>
+            </div>
+            <div style="background:rgba(220,60,60,0.1);border-left:4px solid #c04040;border-radius:8px;padding:18px 20px;">
+                <strong style="color:#ffaaaa;font-size:13px;display:block;margin-bottom:6px;">Dependence on external funding</strong>
+                <p style="color:#ffffff;font-size:13px;line-height:1.65;margin:0;">Local capacity to sustain operations independently is rarely built during implementation.</p>
+            </div>
+            <div style="background:rgba(220,60,60,0.1);border-left:4px solid #c04040;border-radius:8px;padding:18px 20px;">
+                <strong style="color:#ffaaaa;font-size:13px;display:block;margin-bottom:6px;">Work dilution & deadline pressure</strong>
+                <p style="color:#ffffff;font-size:13px;line-height:1.65;margin:0;">Field officers managing multiple projects face fragmented oversight and reduced implementation quality.</p>
+            </div>
+        </div>
+        <div style="background:rgba(196,122,8,0.15);border:1px solid rgba(196,122,8,0.4);border-radius:10px;padding:20px 24px;text-align:center;">
+            <p style="color:#f5d080;font-size:15px;font-weight:600;margin:0;">The result: a global <em>"post-project sustainability gap"</em> where community benefits decline, infrastructure is abandoned, and development investments fail to deliver their intended return.</p>
+        </div>
+    </div>
+
+    <!-- Vision + Mission -->
+    <div class="two-col">
+        <div class="highlight-box" id="vision">
+            <h2>Vision</h2>
+            <p>To create a global ecosystem where development projects continue to deliver impact beyond their initial lifecycle, becoming <strong style="color:var(--accent);">sustainable, scalable, and community-owned.</strong></p>
+        </div>
+        <div class="card accent-card" id="mission">
+            <h2>Mission</h2>
+            <p>To serve as a <strong>transition and continuity platform</strong> that ensures seamless handover, sustained operations, and long-term adoption of development projects across key sectors.</p>
+        </div>
+    </div>
+
+    <!-- Core Objectives -->
+    <div id="objectives" style="background:#ffffff;border-radius:14px;padding:44px;box-shadow:0 4px 22px rgba(4,21,43,0.10);border-top:5px solid #0b7a75;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0b7a75;margin-bottom:10px;">What We Stand For</p>
+        <h2 style="font-family:'Playfair Display',serif;color:#0a2e1a;margin-bottom:32px;">Core Objectives</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+            <div style="display:flex;gap:16px;align-items:flex-start;background:#f2faf6;border-radius:10px;padding:20px;">
+                <div style="min-width:36px;height:36px;border-radius:50%;background:#0b7a75;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;">01</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;display:block;margin-bottom:4px;">Ensure Continuity</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Sustain high-impact projects beyond their funding cycles through structured adoption.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;background:#eef4ff;border-radius:10px;padding:20px;">
+                <div style="min-width:36px;height:36px;border-radius:50%;background:#0b4280;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;">02</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;display:block;margin-bottom:4px;">Facilitate Structured Transition</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Enable seamless handover from funders to local systems and governments.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;background:#fff8ee;border-radius:10px;padding:20px;">
+                <div style="min-width:36px;height:36px;border-radius:50%;background:#c47a08;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;">03</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;display:block;margin-bottom:4px;">Strengthen Long-Term Sustainability</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Provide technical and operational support to keep adopted projects functioning.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;background:#f4f0ff;border-radius:10px;padding:20px;">
+                <div style="min-width:36px;height:36px;border-radius:50%;background:#6c3ba0;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;">04</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;display:block;margin-bottom:4px;">Promote Community Ownership</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Build local resilience and stewardship so communities lead their own outcomes.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;background:#fff0f0;border-radius:10px;padding:20px;grid-column:span 2;">
+                <div style="min-width:36px;height:36px;border-radius:50%;background:#b03060;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;">05</div>
+                <div><strong style="color:#0d1b2a;font-size:14px;display:block;margin-bottom:4px;">Maximize Return on Development Investment</strong><span style="color:#0d1b2a;font-size:13px;line-height:1.6;">Prevent post-project decay and ensure every dollar invested continues to generate measurable impact long after the grant period ends.</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Who GIAA Serves -->
+    <div class="card" id="serves">
+        <h2>Who GIAA Serves</h2>
+        <p style="color:var(--text-mid);margin-bottom:20px;">GIAA works with every stakeholder in the project lifecycle — from the donor who funds it, to the government that inherits it, to the communities that depend on it.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:grid;grid-template-columns:64px 1fr;gap:0;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(4,21,43,0.08);">
+                <div style="background:#0b4280;display:flex;align-items:center;justify-content:center;font-size:26px;padding:20px 0;">🏛️</div>
+                <div style="background:#eef4ff;padding:20px 24px;">
+                    <strong style="color:#0d1b2a;font-size:15px;font-weight:700;display:block;margin-bottom:5px;">Governments & Ministries</strong>
+                    <p style="color:#0d1b2a;font-size:14px;line-height:1.65;margin:0;">Supports continuity of national development initiatives. Strengthens local systems and service delivery for sustained public benefit.</p>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:64px 1fr;gap:0;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(4,21,43,0.08);">
+                <div style="background:#c47a08;display:flex;align-items:center;justify-content:center;font-size:26px;padding:20px 0;">💼</div>
+                <div style="background:#fff8ee;padding:20px 24px;">
+                    <strong style="color:#0d1b2a;font-size:15px;font-weight:700;display:block;margin-bottom:5px;">Donors & Multilateral Agencies</strong>
+                    <p style="color:#0d1b2a;font-size:14px;line-height:1.65;margin:0;">Ensures long-term impact of investments, provides structured exit strategy solutions, and reduces risk of project failure post-closure.</p>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:64px 1fr;gap:0;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(4,21,43,0.08);">
+                <div style="background:#0b7a75;display:flex;align-items:center;justify-content:center;font-size:26px;padding:20px 0;">🤝</div>
+                <div style="background:#e8f7f6;padding:20px 24px;">
+                    <strong style="color:#0d1b2a;font-size:15px;font-weight:700;display:block;margin-bottom:5px;">NGOs & Implementing Partners</strong>
+                    <p style="color:#0d1b2a;font-size:14px;line-height:1.65;margin:0;">A structured, credible handover process that ensures their work continues to deliver value after project close, with full documentation and transition support.</p>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:64px 1fr;gap:0;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(4,21,43,0.08);">
+                <div style="background:#1A7A45;display:flex;align-items:center;justify-content:center;font-size:26px;padding:20px 0;">👥</div>
+                <div style="background:#eafaf2;padding:20px 24px;">
+                    <strong style="color:#0d1b2a;font-size:15px;font-weight:700;display:block;margin-bottom:5px;">Communities</strong>
+                    <p style="color:#0d1b2a;font-size:14px;line-height:1.65;margin:0;">Ensures sustained access to services and benefits. Promotes local ownership, resilience, and community-led stewardship of adopted projects.</p>
+                </div>
             </div>
         </div>
 
-        <!-- Objectives -->
-        <div style="background:#ffffff;padding:36px 44px;border-top:1px solid #dde8f0;">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0b7a75;margin-bottom:18px;">Core Objectives</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
-                <div style="background:#f2faf6;border-radius:8px;padding:16px 18px;border-top:3px solid #0b7a75;">
-                    <strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Ensure Continuity</strong>
-                    <p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Sustain high-impact projects beyond their funding cycles.</p>
-                </div>
-                <div style="background:#eef4ff;border-radius:8px;padding:16px 18px;border-top:3px solid #0b4280;">
-                    <strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Structured Transition</strong>
-                    <p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Seamless handover from funders to local systems.</p>
-                </div>
-                <div style="background:#fff8ee;border-radius:8px;padding:16px 18px;border-top:3px solid #c47a08;">
-                    <strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Long-Term Sustainability</strong>
-                    <p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Technical and operational support to keep projects functioning.</p>
-                </div>
-                <div style="background:#f4f0ff;border-radius:8px;padding:16px 18px;border-top:3px solid #6c3ba0;">
-                    <strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Community Ownership</strong>
-                    <p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Build local resilience and community-led stewardship.</p>
-                </div>
-                <div style="background:#fff0f0;border-radius:8px;padding:16px 18px;border-top:3px solid #b03060;">
-                    <strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Maximise ROI</strong>
-                    <p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Every development dollar continues generating impact long after the grant ends.</p>
-                </div>
-            </div>
+        <!-- CTA -->
+        <div class="cta-bar" style="margin-top:28px;">
+            <a href="#contact" class="cta-btn cta-teal">Partner with GIAA</a>
+            <a href="#contact" class="cta-btn cta-amber">Launch a NIAC</a>
+            <a href="#contact" class="cta-btn cta-blue">Adopt a Project</a>
         </div>
-
-        <!-- Who We Serve + CTA -->
-        <div style="background:#f4f8ff;padding:36px 44px;border-top:1px solid #dde8f0;">
-            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0b4280;margin-bottom:18px;">Who GIAA Serves</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:28px;">
-                <div style="display:flex;gap:14px;align-items:flex-start;background:#ffffff;border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(4,21,43,0.07);">
-                    <span style="font-size:24px;flex-shrink:0;">🏛️</span>
-                    <div><strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Governments & Ministries</strong><p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Continuity of national development initiatives and local service delivery.</p></div>
-                </div>
-                <div style="display:flex;gap:14px;align-items:flex-start;background:#ffffff;border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(4,21,43,0.07);">
-                    <span style="font-size:24px;flex-shrink:0;">💼</span>
-                    <div><strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Donors & Agencies</strong><p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Long-term impact assurance and structured exit strategy for every investment.</p></div>
-                </div>
-                <div style="display:flex;gap:14px;align-items:flex-start;background:#ffffff;border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(4,21,43,0.07);">
-                    <span style="font-size:24px;flex-shrink:0;">🤝</span>
-                    <div><strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">NGOs & Implementers</strong><p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">A credible handover process so their work continues to deliver value after close.</p></div>
-                </div>
-                <div style="display:flex;gap:14px;align-items:flex-start;background:#ffffff;border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(4,21,43,0.07);">
-                    <span style="font-size:24px;flex-shrink:0;">👥</span>
-                    <div><strong style="color:#0a1520;font-size:14px;display:block;margin-bottom:4px;">Communities</strong><p style="color:#2a3a4a;font-size:13px;line-height:1.6;margin:0;">Sustained access to services and local ownership of outcomes that matter.</p></div>
-                </div>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;padding-top:8px;">
-                <a href="#contact" class="cta-btn cta-teal">Partner with GIAA</a>
-                <a href="#contact" class="cta-btn cta-amber">Launch a NIAC</a>
-                <a href="#contact" class="cta-btn cta-blue">Adopt a Project</a>
-            </div>
-        </div>
-
     </div>
 
     <!-- Lifecycle Engagement Model -->
     <div class="card teal-card" id="functions">
         <h2>Lifecycle Engagement Model</h2>
-        <p style="color:var(--text-mid);margin-bottom:24px;">GIAA is present at every stage — from MoU design through implementation, transition, and long-term adoption. Most organisations exit at project closure. <strong>GIAA stays.</strong></p>
+        <p style="color:var(--text-mid);margin-bottom:24px;">GIAA operates through a <strong>Lifecycle Engagement Framework</strong>, ensuring involvement from project inception to long-term sustainability. Unlike organizations limited to a single phase, GIAA is present at every stage.</p>
 
         <div style="display:flex;flex-direction:column;gap:0;">
             <div style="display:grid;grid-template-columns:56px 1fr;gap:0;">
@@ -532,21 +505,105 @@
 
     <!-- Sector Continuity Fund Model -->
     <div class="card teal-card" id="funding">
-        <h2>Self-Sustaining by Design</h2>
-        <p style="color:var(--text-mid);margin-bottom:24px;">GIAA's operational sustainability is built into every project from day one — not negotiated after completion. A dual-stream commitment ensures a <strong>Sector Continuity Fund</strong> is active in every country GIAA operates in, without dependence on new grant cycles.</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
-            <div style="background:var(--accent-light);border-radius:10px;padding:22px 24px;border-top:4px solid var(--accent);">
-                <strong style="color:var(--navy);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;display:block;margin-bottom:6px;">Stream 1</strong>
-                <strong style="color:var(--navy);font-size:16px;display:block;margin-bottom:10px;">Donor Commitment</strong>
-                <p style="font-size:14px;color:var(--text-mid);margin:0;">A portion of each project grant is ring-fenced for long-term adoption — agreed at MOU stage, before disbursement begins.</p>
+        <h2>Sector Continuity Fund Model</h2>
+        <p style="color:var(--text-mid);margin-bottom:24px;">
+            GIAA's funding sustainability is built into every project from day one &mdash; not negotiated after completion.
+            A dual-stream MOU commitment ensures the Sector Continuity Fund is capitalized regardless of how efficiently
+            a project spends its budget, converting every project exit into a long-term adoption resource.
+        </p>
+
+        <!-- Dual-stream overview -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+            <div style="background:var(--accent-light);border-radius:8px;padding:18px 20px;border-top:4px solid var(--accent);">
+                <strong style="color:var(--navy);font-size:13px;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:6px;">Stream 1</strong>
+                <strong style="color:var(--navy);font-size:15px;display:block;margin-bottom:6px;">MOU with Project Donor</strong>
+                <p style="font-size:13px;color:var(--text-mid);margin:0;">10% of the total grant &mdash; or a negotiated fixed amount &mdash; is ring-fenced for long-term adoption at the funding agreement stage, before disbursement begins. Guaranteed regardless of project spend.</p>
             </div>
-            <div style="background:var(--light-bg);border-radius:10px;padding:22px 24px;border-top:4px solid var(--teal);">
-                <strong style="color:var(--navy);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;display:block;margin-bottom:6px;">Stream 2</strong>
-                <strong style="color:var(--navy);font-size:16px;display:block;margin-bottom:10px;">Residual Transfer</strong>
-                <p style="font-size:14px;color:var(--text-mid);margin:0;">Unspent funds at project closeout flow into the NIAC Sector Continuity Fund — capturing value that would otherwise be returned or absorbed.</p>
+            <div style="background:var(--light-bg);border-radius:8px;padding:18px 20px;border-top:4px solid var(--teal);">
+                <strong style="color:var(--navy);font-size:13px;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:6px;">Stream 2</strong>
+                <strong style="color:var(--navy);font-size:15px;display:block;margin-bottom:6px;">MOU with Implementing Organization</strong>
+                <p style="font-size:13px;color:var(--text-mid);margin:0;">Any unspent residual funds at project closeout are transferred to the NIAC Sector Continuity Fund rather than returned to donors or absorbed into administration. Captures additional value from incomplete spend.</p>
             </div>
         </div>
-        <p style="font-size:14px;color:var(--text-mid);text-align:center;margin:0;">Full funding framework available on request &mdash; <a href="#contact" style="color:var(--teal);font-weight:700;text-decoration:none;">contact us to receive our project documentation.</a></p>
+
+        <!-- MOU detail -->
+        <div style="background:var(--navy);border-radius:8px;padding:24px 28px;margin-bottom:20px;">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--accent);font-size:17px;margin-bottom:10px;">Dual-Stream MOU Commitment &mdash; Key Terms</h3>
+            <p style="color:#f0f8ff;margin-bottom:14px;">
+                Both MOUs are signed before project implementation begins. Stream 1 locks in the donor allocation
+                upfront &mdash; it is not contingent on leftover funds. Stream 2 ensures closeout balances are
+                directed to the sector pool rather than lost. Together they provide two independent, predictable
+                funding flows into the same <strong style="color:white;">NIAC Sector Continuity Fund</strong>.
+            </p>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;">
+                <li style="color:#cfe3f7;font-size:15px;padding-left:18px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">-</span>Donor allocation: 10% of total grant or a fixed agreed amount &mdash; committed at funding stage</li>
+                <li style="color:#cfe3f7;font-size:15px;padding-left:18px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">-</span>Residual transfer: triggered automatically upon completion certificate and audit sign-off</li>
+                <li style="color:#cfe3f7;font-size:15px;padding-left:18px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">-</span>Applies to government bodies, NGOs, bilateral donors, and development finance institutions</li>
+                <li style="color:#cfe3f7;font-size:15px;padding-left:18px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">-</span>Standardized MOU templates available to governments and agencies upon request</li>
+                <li style="color:#cfe3f7;font-size:15px;padding-left:18px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">-</span>Governed by a joint GIAA&ndash;NIAC oversight board with independent auditing</li>
+            </ul>
+        </div>
+
+        <!-- Pooling Mechanism -->
+        <div style="background:var(--light-bg);border-radius:8px;padding:24px 28px;margin-bottom:20px;border-left:4px solid var(--teal);">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:17px;margin-bottom:10px;">Sector-Specific Pooling at the NIAC Level</h3>
+            <p style="color:var(--text-mid);margin-bottom:12px;">Residual funds from all completed projects within the same sector flow into a single <strong>Sector Continuity Fund</strong> managed by the relevant NIAC. Rather than each project attempting to sustain itself in isolation, the pooled fund finances monitoring, field validation, data collection, and upgrades collectively across the entire sector portfolio.</p>
+            <p style="color:var(--text-mid);margin-bottom:16px;">The more projects completed in a country, the larger and more capable the sector fund becomes &mdash; creating a <strong>self-reinforcing sustainability loop</strong> that scales with adoption rather than requiring perpetual new grants.</p>
+            <div style="background:white;border-radius:8px;padding:18px 20px;border:1px solid var(--border);">
+                <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;text-align:center;margin-bottom:12px;">
+                    <div style="background:var(--accent);color:var(--navy);padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;">Donor MOU<br><span style="font-size:11px;">10% or fixed amount</span></div>
+                    <span style="color:var(--accent);font-size:18px;font-weight:700;">+</span>
+                    <div style="background:var(--navy);color:white;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;">Implementer MOU<br><span style="color:var(--accent);font-size:11px;">residual at closeout</span></div>
+                    <span style="color:var(--accent);font-size:18px;font-weight:700;">&rarr;</span>
+                    <div style="background:var(--teal);color:white;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;">Sector Fund Pools<br><span style="color:#d8eaf8;font-size:11px;">dual streams, all projects</span></div>
+                    <span style="color:var(--accent);font-size:18px;font-weight:700;">&rarr;</span>
+                    <div style="background:var(--teal);color:white;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;">Specialist Takes Over<br><span style="color:#d8eaf8;font-size:11px;">portfolio monitoring</span></div>
+                    <span style="color:var(--accent);font-size:18px;font-weight:700;">&rarr;</span>
+                    <div style="background:var(--navy);color:white;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;">Impact Proven<br><span style="color:var(--accent);font-size:11px;">not just reported</span></div>
+                </div>
+                <p style="font-size:12px;color:var(--text-mid);text-align:center;margin:0;">Stream 1 (donor allocation) is guaranteed regardless of project spend &mdash; Stream 2 (residual) captures additional closeout value</p>
+            </div>
+        </div>
+
+        <!-- Specialist Takeover -->
+        <div style="background:var(--light-bg);border-radius:8px;padding:24px 28px;margin-bottom:20px;border-left:4px solid var(--accent);">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:17px;margin-bottom:10px;">NIAC Sector Specialist &mdash; Dedicated Project Ownership</h3>
+            <p style="color:var(--text-mid);margin-bottom:12px;">Each NIAC maintains a permanent roster of <strong>sector-dedicated specialists</strong> who formally take ownership of all completed projects within their domain. A NIAC Agriculture Specialist, for example, owns every completed agriculture project in that country — just as a Health Specialist owns all health projects &mdash; building deep institutional knowledge, field relationships, and sector-specific insight over time.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px;">
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--accent);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">No Multitasking</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">Each specialist is assigned exclusively to one sector. No cross-sector responsibilities, no divided attention, no work dilution &mdash; only deep, sustained focus.</p>
+                </div>
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--teal);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">Portfolio Efficiency</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">One specialist managing a portfolio of related completed projects is significantly more cost-effective than each project retaining its own separate oversight staff.</p>
+                </div>
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--blue);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">Zero Handover Gap</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">Specialists are engaged from the adoption phase &mdash; not parachuted in post-completion. Institutional knowledge is preserved, not restarted.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blended Financing -->
+        <div style="background:var(--light-bg);border-radius:8px;padding:24px 28px;margin-top:20px;border-left:4px solid var(--blue);">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:17px;margin-bottom:10px;">Blended Financing & Additional Support</h3>
+            <p style="color:var(--text-mid);margin-bottom:14px;">Beyond the dual-stream MOU model, GIAA leverages a broader financing approach to strengthen long-term sustainability across all adopted projects:</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--accent);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">Blended Financing</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">Partnerships, grants, co-financing, and philanthropic contributions supplement the core sector fund, reducing dependency on any single funding source.</p>
+                </div>
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--teal);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">In-Kind & Technical Contributions</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">Support from governments, institutions, and partners in the form of expertise, infrastructure, and human resources reduces financial burden while enhancing on-ground impact.</p>
+                </div>
+                <div style="background:white;border-radius:6px;padding:16px;border-top:3px solid var(--navy);">
+                    <strong style="color:var(--navy);font-size:14px;display:block;margin-bottom:6px;">Central Coordination</strong>
+                    <p style="font-size:13px;color:var(--text-mid);margin:0;">GIAA acts as the central reference hub for all project continuity — facilitating collaboration, stakeholder alignment, and the pooling of resources across sectors and countries.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Proof of Impact standalone section -->
@@ -559,7 +616,7 @@
         <h2 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:clamp(20px,3vw,28px);font-weight:700;line-height:1.3;margin-bottom:18px;">Proof of Impact — Not a Report of Successful Exit</h2>
 
         <!-- Intro -->
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.85;max-width:820px;margin-bottom:36px;">Success is not a project closure report. Every project GIAA adopts is monitored, validated, and reported at <strong style="color:var(--navy);">1, 3, and 5 years</strong> post-transition — because accountability means proving outcomes endure, not just that funding was spent.</p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.85;max-width:820px;margin-bottom:36px;">GIAA defines success not by the moment a project closes, but by the evidence of outcomes that endure long after handover. Every project GIAA adopts enters a structured continuity cycle — one where impact is monitored, validated, and reported at <strong style="color:var(--navy);">1 year, 3 years, and 5 years</strong> post-transition. This is what accountability looks like in practice.</p>
 
         <!-- Four impact pillars -->
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin-bottom:36px;">
@@ -841,5 +898,3 @@ form.addEventListener('submit', async function(e) {
         });
         if (res.ok) {
             ms
-
-
