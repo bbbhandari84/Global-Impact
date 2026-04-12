@@ -96,52 +96,10 @@
         .cta-amber { background: var(--accent); color: #1a0e00; font-weight: 700; border: 2px solid #8a5200; }
         .cta-blue  { background: var(--blue); color: #ffffff; font-weight: 700; border: 2px solid #072e60; }
 
-        /* CONTACT FORM */
+        /* CONTACT */
         .contact-section { background: linear-gradient(135deg, var(--navy) 0%, #0b3060 100%); border-radius: 10px; padding: 48px 40px; box-shadow: 0 4px 24px rgba(4,21,43,0.18); }
         .contact-section h2 { color: #ffffff; font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 6px; }
-        .contact-section .contact-sub { color: #cfe3f7; font-size: 15px; margin-bottom: 32px; }
-        .contact-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: start; }
-        @media (max-width: 720px) { .contact-layout { grid-template-columns: 1fr; } }
-        .contact-info { display: flex; flex-direction: column; gap: 20px; }
-        .contact-info-item { display: flex; align-items: flex-start; gap: 14px; }
-        .contact-info-item .ci-icon { width: 38px; height: 38px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.15); }
-        .contact-info-item .ci-icon svg { width: 18px; height: 18px; stroke: var(--accent); }
-        .contact-info-item strong { display: block; color: #ffffff; font-size: 14px; margin-bottom: 2px; }
-        .contact-info-item span { color: #e0f2ff; font-size: 14px; }
-        .contact-info-item span a { color: #ffffff; text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.35); transition: color 0.15s; }
-        .contact-info-item span a:hover { color: #f5c842; border-bottom-color: #f5c842; }
-        .contact-divider { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 8px 0; }
-        .giaa-form { display: flex; flex-direction: column; gap: 16px; }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
-        .form-group { display: flex; flex-direction: column; gap: 6px; }
-        .form-group label { font-size: 13px; font-weight: 600; color: #cfe3f7; letter-spacing: 0.3px; }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 15px;
-            padding: 11px 14px;
-            border-radius: 6px;
-            border: 1.5px solid rgba(255,255,255,0.18);
-            background: rgba(255,255,255,0.07);
-            color: #ffffff;
-            outline: none;
-            transition: border-color 0.2s, background 0.2s;
-        }
-        .form-group input::placeholder,
-        .form-group textarea::placeholder { color: rgba(255,255,255,0.35); }
-        .form-group select option { background: #0b3060; color: #ffffff; }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus { border-color: var(--accent); background: rgba(255,255,255,0.11); }
-        .form-group textarea { resize: vertical; min-height: 110px; }
-        .form-submit { background: var(--accent); color: #1a0e00; font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 16px; padding: 13px 32px; border: none; border-radius: 6px; cursor: pointer; transition: opacity 0.15s, transform 0.15s; align-self: flex-start; }
-        .form-submit:hover { opacity: 0.88; transform: translateY(-1px); }
-        .form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-        .form-msg { display: none; padding: 12px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; }
-        .form-msg.success { display: block; background: rgba(11,122,117,0.3); border: 1px solid var(--teal); color: #7ee8e2; }
-        .form-msg.error { display: block; background: rgba(180,50,50,0.2); border: 1px solid #c05050; color: #f4aaaa; }
+        .contact-section .contact-sub { color: #cfe3f7; font-size: 15px; margin-bottom: 32px; text-align: center; }
 
         /* FOOTER */
         footer { text-align: center; padding: 28px 20px; background: #0b2a5e; color: #ffffff; font-size: 15px; margin-top: 0; border-top: 3px solid #1a6bbf; letter-spacing: 0.3px; }
@@ -773,87 +731,30 @@
         </div>
     </div>
 
-    <!-- Contact Form -->
+    <!-- Contact -->
     <div class="contact-section" id="contact">
         <h2>Contact Us</h2>
         <p class="contact-sub">Reach out to partner, launch a NIAC, adopt a project, or ask anything about GIAA's adoption frameworks.</p>
 
-        <div class="contact-layout">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:28px;padding:12px 0 8px;">
 
-            <!-- Left: Info panel -->
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <div class="ci-icon">
-                        <svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    </div>
-                    <div>
-                        <strong>Email</strong>
-                        <span><a href="/cdn-cgi/l/email-protection#5c333a3a353f391c3b30333e3d3035312c3d3f283d38332c2835333272332e3b"><span class="__cf_email__" data-cfemail="462920202f252306212a2924272a2f2b3627253227222936322f292868293421">[email&#160;protected]</span></a></span>
-                    </div>
+            <a href="mailto:office@globalimpactadoption.org" style="display:inline-flex;align-items:center;gap:14px;background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.2);border-radius:12px;padding:20px 36px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+                <svg width="26" height="26" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:0.3px;">office@globalimpactadoption.org</span>
+            </a>
+
+            <div style="display:flex;gap:40px;flex-wrap:wrap;justify-content:center;">
+                <div style="text-align:center;">
+                    <span style="display:block;color:#a0c8e8;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Response Time</span>
+                    <span style="color:#ffffff;font-size:14px;">Within 3&ndash;5 business days</span>
                 </div>
-                <div class="contact-info-item">
-                    <div class="ci-icon">
-                        <svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                    </div>
-                    <div>
-                        <strong>Response Time</strong>
-                        <span>Within 3&ndash;5 business days</span>
-                    </div>
+                <div style="text-align:center;">
+                    <span style="display:block;color:#a0c8e8;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;">Website</span>
+                    <a href="https://globalimpactadoption.org" style="color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.3);">globalimpactadoption.org</a>
                 </div>
-                <div class="contact-info-item">
-                    <div class="ci-icon">
-                        <svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
-                    <div>
-                        <strong>Global Office</strong>
-                        <span>globalimpactadoption.org</span>
-                    </div>
-                </div>
-                <hr class="contact-divider">
-                <p style="color:#e0f0ff;font-size:13px;line-height:1.7;margin:0;">Whether you represent a government ministry, a funding agency, an NGO, or the private sector &mdash; GIAA's team will match your enquiry to the right specialist.</p>
             </div>
 
-            <!-- Right: Inbuilt form (Formspree &mdash; sign up free at formspree.io, replace YOUR_FORM_ID) -->
-            <form class="giaa-form" id="giaaForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="fname">Full Name *</label>
-                        <input type="text" id="fname" name="name" placeholder="Your full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="forg">Organization</label>
-                        <input type="text" id="forg" name="organization" placeholder="Ministry, NGO, agency...">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="femail">Email Address *</label>
-                        <input type="email" id="femail" name="email" placeholder="you@organization.org" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="fenquiry">Enquiry Type *</label>
-                        <select id="fenquiry" name="enquiry_type" required>
-                            <option value="" disabled selected>Select an option</option>
-                            <option value="Partner with GIAA">Partner with GIAA</option>
-                            <option value="Launch a NIAC">Launch a NIAC</option>
-                            <option value="Adopt a Project">Adopt a Project</option>
-                            <option value="MOU / Funding">MOU / Funding</option>
-                            <option value="General Enquiry">General Enquiry</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="fmsg">Message *</label>
-                    <textarea id="fmsg" name="message" placeholder="Briefly describe your project, country, sector, or question..." required></textarea>
-                </div>
-
-                <div class="form-msg" id="formMsg"></div>
-
-                <button type="submit" class="form-submit" id="formBtn">Send Message</button>
-            </form>
+            <p style="color:#c0d8f0;font-size:14px;line-height:1.75;text-align:center;max-width:560px;margin:0;">Whether you represent a government ministry, a funding agency, an NGO, or the private sector &mdash; GIAA's team will match your enquiry to the right specialist.</p>
 
         </div>
     </div>
@@ -864,21 +765,3 @@
     <p>&copy; 2026 &nbsp;<span>Global Impact and Adoption Alliance (GIAA)</span>&nbsp; &middot; &nbsp;<a href="https://globalimpactadoption.org" style="color:#7ec8f5;text-decoration:none;font-weight:600;">globalimpactadoption.org</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const form = document.getElementById('giaaForm');
-const msg  = document.getElementById('formMsg');
-const btn  = document.getElementById('formBtn');
-form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-    msg.className = 'form-msg';
-    try {
-        const res = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-            ms
