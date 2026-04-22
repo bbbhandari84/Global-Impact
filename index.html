@@ -529,28 +529,44 @@
         </div>
 
         <!-- Sector-Level Resource Alignment -->
-        <div style="background:rgba(11,66,128,0.2);border:1px solid rgba(120,180,255,0.2);border-radius:8px;padding:24px 28px;margin-bottom:20px;border-left:4px solid #7ec8f5;">
-            <h3 style="font-family:'Playfair Display',serif;color:#7ec8f5;font-size:16px;margin-bottom:12px;">Sector-Level Resource Alignment</h3>
-            <p style="color:#a8d4f0;margin-bottom:14px;">Through the framework, sustainability resources across projects are aligned at the sector level to support shared continuity functions. These may include:</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:16px;">
-                <div style="background:rgba(4,21,43,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 16px;border-top:3px solid #ffd580;">
-                    <strong style="color:#ffd580;font-size:13.5px;display:block;margin-bottom:5px;">Monitoring &amp; Field Validation</strong>
-                    <p style="color:#d4eef8;font-size:12.5px;margin:0;line-height:1.6;">Ongoing tracking of project outcomes in the field against agreed indicators.</p>
+        <div style="background:rgba(11,66,128,0.2);border:1px solid rgba(120,180,255,0.2);border-radius:8px;padding:28px;margin-bottom:20px;border-left:4px solid #7ec8f5;">
+            <h3 style="font-family:'Playfair Display',serif;color:#7ec8f5;font-size:16px;margin-bottom:24px;text-align:center;">Sector-Level Resource Alignment</h3>
+            <div style="position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:1;">
+                <!-- Centre hub -->
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#0b4280,#0b7a75);border:2px solid rgba(120,180,255,0.5);display:flex;align-items:center;justify-content:center;text-align:center;z-index:2;box-shadow:0 0 24px rgba(11,66,128,0.5);">
+                    <span style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:0.5px;line-height:1.4;padding:0 6px;">SECTOR<br>CONTINUITY</span>
                 </div>
-                <div style="background:rgba(4,21,43,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 16px;border-top:3px solid #6ddba8;">
-                    <strong style="color:#6ddba8;font-size:13.5px;display:block;margin-bottom:5px;">Data Collection &amp; Outcome Tracking</strong>
-                    <p style="color:#d4eef8;font-size:12.5px;margin:0;line-height:1.6;">Structured evidence gathering to demonstrate sustained impact post-closure.</p>
+                <!-- Orbit ring -->
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:90%;border-radius:50%;border:1px dashed rgba(120,180,255,0.2);"></div>
+                <!-- Node 1 — top -->
+                <div style="position:absolute;top:2%;left:50%;transform:translateX(-50%);width:100px;text-align:center;">
+                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(255,213,128,0.15);border:2px solid #ffd580;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd580" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    </div>
+                    <span style="color:#ffd580;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Monitoring &amp;<br>Field Validation</span>
                 </div>
-                <div style="background:rgba(4,21,43,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 16px;border-top:3px solid #7ec8f5;">
-                    <strong style="color:#7ec8f5;font-size:13.5px;display:block;margin-bottom:5px;">System Maintenance &amp; Operational Support</strong>
-                    <p style="color:#d4eef8;font-size:12.5px;margin:0;line-height:1.6;">Supporting ministries to maintain systems and services functional post-handover through structured PCAF continuity mechanisms.</p>
+                <!-- Node 2 — right -->
+                <div style="position:absolute;top:50%;right:0%;transform:translateY(-50%);width:100px;text-align:center;">
+                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(109,219,168,0.15);border:2px solid #6ddba8;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <span style="color:#6ddba8;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Data Collection &amp;<br>Outcome Tracking</span>
                 </div>
-                <div style="background:rgba(4,21,43,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 16px;border-top:3px solid #6ddba8;">
-                    <strong style="color:#6ddba8;font-size:13.5px;display:block;margin-bottom:5px;">Continued Adoption &amp; Scaling</strong>
-                    <p style="color:#d4eef8;font-size:12.5px;margin:0;line-height:1.6;">Support for replication and expansion of successful interventions into wider use.</p>
+                <!-- Node 3 — bottom -->
+                <div style="position:absolute;bottom:2%;left:50%;transform:translateX(-50%);width:110px;text-align:center;">
+                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(126,200,245,0.15);border:2px solid #7ec8f5;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ec8f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <span style="color:#7ec8f5;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">System Maintenance &amp;<br>Operational Support</span>
+                </div>
+                <!-- Node 4 — left -->
+                <div style="position:absolute;top:50%;left:0%;transform:translateY(-50%);width:100px;text-align:center;">
+                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(109,219,168,0.15);border:2px solid #6ddba8;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                    </div>
+                    <span style="color:#6ddba8;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Continued Adoption<br>&amp; Scaling</span>
                 </div>
             </div>
-            <p style="color:#d4eef8;font-size:13.5px;margin:0;background:rgba(4,21,43,0.4);border-radius:6px;padding:12px 16px;border-left:3px solid #6ddba8;">This coordinated approach improves efficiency through shared resource utilisation, reduced fragmentation, and consistent post-project engagement. This alignment is achieved without establishing independent fund custody outside existing donor or government systems.</p>
         </div>
 
         <!-- Governance Framework -->
