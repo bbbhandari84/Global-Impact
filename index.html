@@ -207,6 +207,8 @@
                 margin-bottom: 8px;
             }
 
+            /* PCAF infographic lifecycle flow */
+            .lifecycle-flow { overflow-x: auto; }
             /* PCAF 4-component architecture */
             #functions .card,
             #functions > div { padding: 16px !important; }
@@ -423,32 +425,111 @@
         <h2>Project Continuity and Adoption Framework (PCAF)</h2>
         <p style="color:#a8d4f0;margin-bottom:20px;">The <strong style="color:#ffffff;">PCAF</strong> is GIAA's operational model — a four-component framework that embeds transition planning, coordination, and continuity financing into every stage of a project's lifecycle, so handover to ministry-led systems is structured, not improvised.</p>
 
-        <!-- 4-component architecture -->
-        <div style="background:var(--navy);border-radius:10px;padding:24px 28px;margin-bottom:28px;">
-            <p style="color:var(--accent);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;">Four Integrated Framework Components</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
-                <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:16px 18px;border-left:3px solid var(--accent);">
-                    <strong style="color:var(--accent);font-size:13px;display:block;margin-bottom:4px;">PCAF</strong>
-                    <strong style="color:#fff;font-size:14px;display:block;margin-bottom:6px;">Project Continuity and Adoption Framework</strong>
-                    <p style="color:#b8d4f0;font-size:12.5px;margin:0;line-height:1.6;">A lifecycle-based framework integrating sustainability from design through to post-project phases.</p>
+
+        <!-- PCAF Framework Infographic -->
+        <div style="margin-bottom:36px;">
+            <p style="color:#0db4b9;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px;text-align:center;">GIAA Operational Model</p>
+            <div style="background:linear-gradient(145deg,#020d1c 0%,#041830 60%,#062040 100%);border:2px solid rgba(13,180,185,0.4);border-radius:18px;padding:36px 32px 32px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.6),inset 0 1px 0 rgba(13,180,185,0.15);">
+
+                <!-- Decorative glow top -->
+                <div style="position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:400px;height:120px;background:radial-gradient(ellipse,rgba(13,180,185,0.15) 0%,transparent 70%);pointer-events:none;"></div>
+
+                <!-- Lifecycle Flow Banner -->
+                <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(13,180,185,0.35);border-radius:12px;padding:18px 22px;margin-bottom:28px;">
+                    <p style="color:#ffffff;font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 14px 0;">Project Lifecycle Phases</p>
+                    <div style="display:flex;align-items:stretch;gap:0;overflow-x:auto;border-radius:8px;overflow:hidden;">
+                        <div style="background:rgba(13,180,185,0.25);border-right:none;padding:12px 20px;min-width:90px;text-align:center;flex:1;display:flex;align-items:center;justify-content:center;">
+                            <span style="color:#ffffff;font-size:14px;font-weight:800;">Design</span>
+                        </div>
+                        <div style="width:0;height:0;border-top:24px solid transparent;border-bottom:24px solid transparent;border-left:14px solid rgba(13,180,185,0.5);flex-shrink:0;align-self:center;"></div>
+                        <div style="background:rgba(78,160,230,0.25);padding:12px 20px;min-width:120px;text-align:center;flex:1;display:flex;align-items:center;justify-content:center;">
+                            <span style="color:#ffffff;font-size:14px;font-weight:800;">Implementation</span>
+                        </div>
+                        <div style="width:0;height:0;border-top:24px solid transparent;border-bottom:24px solid transparent;border-left:14px solid rgba(78,160,230,0.5);flex-shrink:0;align-self:center;"></div>
+                        <div style="background:rgba(255,180,70,0.2);padding:12px 20px;min-width:100px;text-align:center;flex:1;display:flex;align-items:center;justify-content:center;">
+                            <span style="color:#ffd580;font-size:14px;font-weight:800;">Transition</span>
+                        </div>
+                        <div style="width:0;height:0;border-top:24px solid transparent;border-bottom:24px solid transparent;border-left:14px solid rgba(255,180,70,0.5);flex-shrink:0;align-self:center;"></div>
+                        <div style="background:rgba(100,220,140,0.2);padding:12px 20px;min-width:110px;text-align:center;flex:1;display:flex;align-items:center;justify-content:center;">
+                            <span style="color:#a8ffcc;font-size:14px;font-weight:800;">Post-Project</span>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;">
+                        <span style="background:rgba(13,180,185,0.18);border:1px solid rgba(13,180,185,0.5);border-radius:5px;padding:4px 10px;font-size:11.5px;color:#7ee8f0;font-weight:600;">⬤ SPCM activated at design</span>
+                        <span style="background:rgba(13,180,185,0.18);border:1px solid rgba(13,180,185,0.5);border-radius:5px;padding:4px 10px;font-size:11.5px;color:#7ee8f0;font-weight:600;">⬤ SPCM active post-implementation</span>
+                    </div>
                 </div>
-                <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:16px 18px;border-left:3px solid #4caf50;">
-                    <strong style="color:#a8ffcc;font-size:13px;display:block;margin-bottom:4px;">NIAC Function</strong>
-                    <strong style="color:#fff;font-size:14px;display:block;margin-bottom:6px;">National Impact Adoption Coordination</strong>
-                    <p style="color:#b8d4f0;font-size:12.5px;margin:0;line-height:1.6;">A ministry-embedded coordination function responsible for sector-level continuity. Not a new institution.</p>
+
+                <!-- 4 Components Grid -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+
+                    <!-- 1 PCAF -->
+                    <div style="background:linear-gradient(135deg,rgba(13,180,185,0.18),rgba(13,180,185,0.06));border:1.5px solid rgba(13,180,185,0.6);border-radius:14px;padding:22px 20px;position:relative;box-shadow:0 4px 16px rgba(13,180,185,0.1);">
+                        <div style="position:absolute;top:-1px;left:18px;background:#0db4b9;color:#000;font-size:11px;font-weight:900;padding:3px 10px;border-radius:0 0 7px 7px;letter-spacing:1px;">1</div>
+                        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;margin-top:10px;">
+                            <div style="width:44px;height:44px;background:rgba(13,180,185,0.25);border:1px solid rgba(13,180,185,0.5);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0db4b9" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/><path d="m4.93 4.93 2.12 2.12m9.9 9.9 2.12 2.12M4.93 19.07l2.12-2.12m9.9-9.9 2.12-2.12"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#0db4b9;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">PCAF</p>
+                                <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0;line-height:1.35;">Project Continuity &amp; Adoption Framework</p>
+                            </div>
+                        </div>
+                        <p style="color:#cce8f8;font-size:13.5px;margin:0;line-height:1.7;">A lifecycle-based framework integrating sustainability from design through to post-project phases.</p>
+                    </div>
+
+                    <!-- 2 NIAC -->
+                    <div style="background:linear-gradient(135deg,rgba(76,175,80,0.18),rgba(76,175,80,0.06));border:1.5px solid rgba(76,175,80,0.6);border-radius:14px;padding:22px 20px;position:relative;box-shadow:0 4px 16px rgba(76,175,80,0.1);">
+                        <div style="position:absolute;top:-1px;left:18px;background:#4caf50;color:#000;font-size:11px;font-weight:900;padding:3px 10px;border-radius:0 0 7px 7px;letter-spacing:1px;">2</div>
+                        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;margin-top:10px;">
+                            <div style="width:44px;height:44px;background:rgba(76,175,80,0.25);border:1px solid rgba(76,175,80,0.5);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#a8ffcc;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">NIAC Function</p>
+                                <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0;line-height:1.35;">National Impact Adoption Coordination</p>
+                            </div>
+                        </div>
+                        <p style="color:#cce8f8;font-size:13.5px;margin:0;line-height:1.7;">A ministry-embedded coordination function responsible for sector-level continuity. <em style="color:#a8ffcc;font-style:normal;font-weight:700;">Not a new institution.</em></p>
+                    </div>
+
+                    <!-- 3 SPCM -->
+                    <div style="background:linear-gradient(135deg,rgba(78,182,212,0.18),rgba(78,182,212,0.06));border:1.5px solid rgba(78,182,212,0.6);border-radius:14px;padding:22px 20px;position:relative;box-shadow:0 4px 16px rgba(78,182,212,0.1);">
+                        <div style="position:absolute;top:-1px;left:18px;background:#4eb6d4;color:#000;font-size:11px;font-weight:900;padding:3px 10px;border-radius:0 0 7px 7px;letter-spacing:1px;">3</div>
+                        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;margin-top:10px;">
+                            <div style="width:44px;height:44px;background:rgba(78,182,212,0.25);border:1px solid rgba(78,182,212,0.5);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4eb6d4" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#8de8ff;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">SPCM</p>
+                                <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0;line-height:1.35;">Sector-Based Pooled Continuity Mechanism</p>
+                            </div>
+                        </div>
+                        <p style="color:#cce8f8;font-size:13.5px;margin:0;line-height:1.7;">A pooled approach to sustainability financing across multiple projects within a sector.</p>
+                    </div>
+
+                    <!-- 4 PPSA -->
+                    <div style="background:linear-gradient(135deg,rgba(255,180,70,0.15),rgba(255,180,70,0.05));border:1.5px solid rgba(255,180,70,0.6);border-radius:14px;padding:22px 20px;position:relative;box-shadow:0 4px 16px rgba(255,180,70,0.1);">
+                        <div style="position:absolute;top:-1px;left:18px;background:#ffb446;color:#000;font-size:11px;font-weight:900;padding:3px 10px;border-radius:0 0 7px 7px;letter-spacing:1px;">4</div>
+                        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;margin-top:10px;">
+                            <div style="width:44px;height:44px;background:rgba(255,180,70,0.25);border:1px solid rgba(255,180,70,0.5);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffb446" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#ffd580;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">PPSA</p>
+                                <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0;line-height:1.35;">Post-Project Sustainability Allocation</p>
+                            </div>
+                        </div>
+                        <p style="color:#cce8f8;font-size:13.5px;margin:0;line-height:1.7;">A dedicated allocation (5–10% of project budget) integrated at design stage to fund post-project continuity.</p>
+                    </div>
+
                 </div>
-                <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:16px 18px;border-left:3px solid #4db6d4;">
-                    <strong style="color:#8de8ff;font-size:13px;display:block;margin-bottom:4px;">SPCM</strong>
-                    <strong style="color:#fff;font-size:14px;display:block;margin-bottom:6px;">Sector-Based Pooled Continuity Mechanism</strong>
-                    <p style="color:#b8d4f0;font-size:12.5px;margin:0;line-height:1.6;">A pooled approach to sustainability financing across multiple projects within a sector.</p>
-                </div>
-                <div style="background:rgba(255,255,255,0.07);border-radius:8px;padding:16px 18px;border-left:3px solid var(--accent);">
-                    <strong style="color:var(--accent);font-size:13px;display:block;margin-bottom:4px;">PPSA</strong>
-                    <strong style="color:#fff;font-size:14px;display:block;margin-bottom:6px;">Post-Project Sustainability Allocation</strong>
-                    <p style="color:#b8d4f0;font-size:12.5px;margin:0;line-height:1.6;">A dedicated allocation (typically 5&ndash;10% of project budget) integrated during project design to fund post-project continuity.</p>
-                </div>
+
+                <!-- Bottom label -->
+                <p style="text-align:center;color:rgba(13,180,185,0.6);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin:24px 0 0;">GIAA Operational Model · www.globalimpactadoption.org</p>
             </div>
         </div>
+
 
     </div>
 
