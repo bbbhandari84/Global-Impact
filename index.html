@@ -586,69 +586,102 @@
             </div>
         </div>
 
-        <!-- Traditional vs Proposed comparison -->
-        <div style="background:rgba(196,122,8,0.12);border:1px solid rgba(255,200,80,0.2);border-radius:8px;padding:24px 28px;margin-bottom:20px;border-left:4px solid var(--accent);">
-            <h3 style="font-family:'Playfair Display',serif;color:#ffd580;font-size:16px;margin-bottom:12px;">The Functional Shift</h3>
-            <div class="mob-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:8px;overflow:hidden;border:1px solid var(--border);margin-bottom:16px;">
-                <div style="background:rgba(139,0,0,0.3);border-right:1px solid rgba(255,100,100,0.2);padding:14px 18px;">
-                    <strong style="color:#ff9999;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:10px;">Traditional Model</strong>
-                    <div style="display:flex;flex-direction:column;gap:8px;">
-                        <p style="color:#ffcccc;font-size:13px;margin:0;padding:8px 12px;background:rgba(139,0,0,0.2);border-radius:6px;">Multiple projects, multiple separate closure systems</p>
-                        <p style="color:#ffcccc;font-size:13px;margin:0;padding:8px 12px;background:rgba(139,0,0,0.2);border-radius:6px;">Fragmented ownership</p>
-                        <p style="color:#ffcccc;font-size:13px;margin:0;padding:8px 12px;background:rgba(139,0,0,0.2);border-radius:6px;">Project-level sustainability</p>
+        <!-- Functional Shift Graphic -->
+        <div style="margin-bottom:24px;">
+            <p style="color:#ffd580;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px;text-align:center;">The Functional Shift</p>
+            <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;border-radius:16px;overflow:hidden;box-shadow:0 6px 32px rgba(0,0,0,0.5);">
+
+                <!-- LEFT: Traditional -->
+                <div style="background:linear-gradient(160deg,#2a0505 0%,#1a0808 100%);padding:28px 24px;border:1.5px solid rgba(255,80,80,0.3);border-right:none;border-radius:16px 0 0 16px;">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+                        <div style="width:32px;height:32px;border-radius:50%;background:rgba(220,50,50,0.25);border:1.5px solid rgba(220,50,50,0.6);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                        </div>
+                        <span style="color:#ff9999;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;">Traditional Model</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <div style="background:rgba(180,30,30,0.2);border:1px solid rgba(220,80,80,0.25);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(220,50,50,0.3);border:1px solid rgba(255,100,100,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#ff8888" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#ffcccc;font-size:14px;font-weight:600;margin:0;line-height:1.5;">Multiple separate closure systems</p>
+                                <p style="color:#cc8888;font-size:12px;margin:2px 0 0;line-height:1.4;">One per project — siloed &amp; uncoordinated</p>
+                            </div>
+                        </div>
+                        <div style="background:rgba(180,30,30,0.2);border:1px solid rgba(220,80,80,0.25);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(220,50,50,0.3);border:1px solid rgba(255,100,100,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#ff8888" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#ffcccc;font-size:14px;font-weight:600;margin:0;line-height:1.5;">Fragmented ownership</p>
+                                <p style="color:#cc8888;font-size:12px;margin:2px 0 0;line-height:1.4;">No clear institutional custodian</p>
+                            </div>
+                        </div>
+                        <div style="background:rgba(180,30,30,0.2);border:1px solid rgba(220,80,80,0.25);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(220,50,50,0.3);border:1px solid rgba(255,100,100,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#ff8888" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#ffcccc;font-size:14px;font-weight:600;margin:0;line-height:1.5;">Project-level sustainability</p>
+                                <p style="color:#cc8888;font-size:12px;margin:2px 0 0;line-height:1.4;">Impact ends at project closure</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="background:rgba(11,122,69,0.3);padding:14px 18px;">
-                    <strong style="color:#6ddba8;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:10px;">PCAF Proposed Model</strong>
-                    <div style="display:flex;flex-direction:column;gap:8px;">
-                        <p style="color:#d4eef8;font-size:13px;margin:0;padding:8px 12px;background:rgba(11,92,42,0.25);border-radius:6px;">Multiple projects, one coordinated continuity system</p>
-                        <p style="color:#d4eef8;font-size:13px;margin:0;padding:8px 12px;background:rgba(11,92,42,0.25);border-radius:6px;">Ministry-led ownership</p>
-                        <p style="color:#d4eef8;font-size:13px;margin:0;padding:8px 12px;background:rgba(11,92,42,0.25);border-radius:6px;">Sector-level sustainability</p>
+
+                <!-- CENTRE ARROW -->
+                <div style="background:linear-gradient(180deg,#1a0f00,#041830,#001a10);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 14px;gap:8px;min-width:56px;">
+                    <div style="width:1px;flex:1;background:linear-gradient(180deg,transparent,rgba(255,213,128,0.3),transparent);"></div>
+                    <div style="background:linear-gradient(135deg,rgba(255,213,128,0.15),rgba(109,219,168,0.15));border:1.5px solid rgba(255,213,128,0.5);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd580" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                    <div style="width:1px;flex:1;background:linear-gradient(180deg,transparent,rgba(109,219,168,0.3),transparent);"></div>
+                </div>
+
+                <!-- RIGHT: PCAF -->
+                <div style="background:linear-gradient(160deg,#021f0e 0%,#021a1a 100%);padding:28px 24px;border:1.5px solid rgba(109,219,168,0.35);border-left:none;border-radius:0 16px 16px 0;">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+                        <div style="width:32px;height:32px;border-radius:50%;background:rgba(109,219,168,0.2);border:1.5px solid rgba(109,219,168,0.6);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <span style="color:#6ddba8;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;">PCAF Proposed Model</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <div style="background:rgba(11,100,55,0.25);border:1px solid rgba(109,219,168,0.3);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(109,219,168,0.2);border:1px solid rgba(109,219,168,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#d4f5e8;font-size:14px;font-weight:600;margin:0;line-height:1.5;">One coordinated continuity system</p>
+                                <p style="color:#7ec8a0;font-size:12px;margin:2px 0 0;line-height:1.4;">Shared across multiple projects in a sector</p>
+                            </div>
+                        </div>
+                        <div style="background:rgba(11,100,55,0.25);border:1px solid rgba(109,219,168,0.3);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(109,219,168,0.2);border:1px solid rgba(109,219,168,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#d4f5e8;font-size:14px;font-weight:600;margin:0;line-height:1.5;">Ministry-led ownership</p>
+                                <p style="color:#7ec8a0;font-size:12px;margin:2px 0 0;line-height:1.4;">Institutional authority embedded in government</p>
+                            </div>
+                        </div>
+                        <div style="background:rgba(11,100,55,0.25);border:1px solid rgba(109,219,168,0.3);border-radius:10px;padding:13px 16px;display:flex;align-items:flex-start;gap:10px;">
+                            <div style="width:20px;height:20px;border-radius:50%;background:rgba(109,219,168,0.2);border:1px solid rgba(109,219,168,0.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <p style="color:#d4f5e8;font-size:14px;font-weight:600;margin:0;line-height:1.5;">Sector-level sustainability</p>
+                                <p style="color:#7ec8a0;font-size:12px;margin:2px 0 0;line-height:1.4;">Impact sustained beyond the project lifecycle</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <!-- Sector-Level Resource Alignment -->
-        <div style="background:rgba(11,66,128,0.2);border:1px solid rgba(120,180,255,0.2);border-radius:8px;padding:28px;margin-bottom:20px;border-left:4px solid #7ec8f5;">
-            <h3 style="font-family:'Playfair Display',serif;color:#7ec8f5;font-size:16px;margin-bottom:24px;text-align:center;">Sector-Level Resource Alignment</h3>
-            <div style="position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:1;">
-                <!-- Centre hub -->
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#0b4280,#0b7a75);border:2px solid rgba(120,180,255,0.5);display:flex;align-items:center;justify-content:center;text-align:center;z-index:2;box-shadow:0 0 24px rgba(11,66,128,0.5);">
-                    <span style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:0.5px;line-height:1.4;padding:0 6px;">SECTOR<br>CONTINUITY</span>
-                </div>
-                <!-- Orbit ring -->
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:90%;border-radius:50%;border:1px dashed rgba(120,180,255,0.2);"></div>
-                <!-- Node 1 — top -->
-                <div style="position:absolute;top:2%;left:50%;transform:translateX(-50%);width:100px;text-align:center;">
-                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(255,213,128,0.15);border:2px solid #ffd580;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd580" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                    </div>
-                    <span style="color:#ffd580;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Monitoring &amp;<br>Field Validation</span>
-                </div>
-                <!-- Node 2 — right -->
-                <div style="position:absolute;top:50%;right:0%;transform:translateY(-50%);width:100px;text-align:center;">
-                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(109,219,168,0.15);border:2px solid #6ddba8;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                    </div>
-                    <span style="color:#6ddba8;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Data Collection &amp;<br>Outcome Tracking</span>
-                </div>
-                <!-- Node 3 — bottom -->
-                <div style="position:absolute;bottom:2%;left:50%;transform:translateX(-50%);width:110px;text-align:center;">
-                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(126,200,245,0.15);border:2px solid #7ec8f5;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ec8f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                    </div>
-                    <span style="color:#7ec8f5;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">System Maintenance &amp;<br>Operational Support</span>
-                </div>
-                <!-- Node 4 — left -->
-                <div style="position:absolute;top:50%;left:0%;transform:translateY(-50%);width:100px;text-align:center;">
-                    <div style="width:46px;height:46px;border-radius:50%;background:rgba(109,219,168,0.15);border:2px solid #6ddba8;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ddba8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                    </div>
-                    <span style="color:#6ddba8;font-size:10.5px;font-weight:700;line-height:1.3;display:block;">Continued Adoption<br>&amp; Scaling</span>
-                </div>
-            </div>
-        </div>
+
 
         <!-- Governance Framework -->
         <div style="background:var(--navy);border-radius:8px;padding:24px 28px;margin-bottom:20px;">
