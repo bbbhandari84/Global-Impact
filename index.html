@@ -221,6 +221,12 @@
         }
 
         @media (max-width: 700px) {
+            #projects .mob-3col-outcomes {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        @media (max-width: 700px) {
             #description .pillar-grid {
                 grid-template-columns: 1fr !important;
             }
@@ -803,6 +809,7 @@
             alt="GIAA Logo" class="nav-logo" style="max-width:100%;height:auto;">
         <div class="nav-links"><a href="#description">About</a>
             <a href="#objectives">Objectives</a>
+            <a href="#projects">Projects</a>
             <a href="#serves">Who We Serve</a>
             <a href="#functions">PCAF</a>
             <a href="#structure">Structure</a>
@@ -816,8 +823,8 @@
 
     <header>
         <h1>Global Impact and <span>Adoption Alliance</span></h1>
-        <p class="tagline">"Impact beyond Exit."</p>
-        <p class="header-sub">Global Adoption &nbsp;·&nbsp; Sustainability &nbsp;·&nbsp; Long-Term Impact</p>
+        <p class="tagline">"Designing Impact That Endures."</p>
+        <p class="header-sub">Sustainability &nbsp;·&nbsp; Inclusion &nbsp;·&nbsp; Long-Term Impact &nbsp;·&nbsp; Local Ownership</p>
     </header>
 
     <div class="container">
@@ -831,12 +838,19 @@
                     Who We Are</p>
                 <h2
                     style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(20px,2.2vw,24px);line-height:1.3;margin-bottom:20px;max-width:820px;">
-                    Bridging the Gap Between Project Exit and Lasting Impact</h2>
+                    A Multi-Project Alliance for Lasting Impact and Sustainable Development</h2>
                 <p style="color:#e8f8f2;font-size:15.5px;line-height:1.85;max-width:860px;margin-bottom:10px;">Global
-                    Impact &amp; Adoption Alliance (GIAA) is a Canada-based Nonprofit Organization developing the
-                    <strong style="color:#ffffff;">Post-Project Transition Governance (PPTG) framework</strong> — a
-                    globally replicable system that embeds structured continuity mechanisms into development projects,
-                    enabling ministries to act as long-term custodians of outcomes across five development sectors.</p>
+                    Impact &amp; Adoption Alliance (GIAA) is a Canada-based Nonprofit Organization that incubates,
+                    co-designs, and scales <strong style="color:#ffffff;">impact-driven projects</strong> that address
+                    structural gaps in sustainability, local ownership, supply chains, and long-term governance. Each
+                    GIAA project is purpose-built around a specific challenge — grounded in evidence, led by community
+                    stakeholders, and designed to deliver measurable outcomes that outlast the project itself.</p>
+                <p style="color:#c8edd8;font-size:14.5px;line-height:1.8;max-width:860px;margin-bottom:0;">GIAA's
+                    current portfolio includes the <strong style="color:#ffffff;">Post-Project Continuity &amp;
+                    Adoption Framework (PCAF)</strong> — a transition governance model for development projects — and
+                    <strong style="color:#ffffff;">Bhutanese for Bhutanese</strong>, a women-led agricultural
+                    supply-chain initiative transforming Bhutan's premium local produce into hospitality-grade products.
+                    Further projects are in active development.</p>
 
                 <!-- Three pillars inline -->
                 <div class="pillar-grid" class="mob-3col"
@@ -846,14 +860,14 @@
                         <div
                             style="width:48px;height:48px;border-radius:10px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;">
                             🔗</div>
-                        <strong style="color:#a8ffcc;font-size:16px;font-weight:700;line-height:1.3;">Framework Co-Design &amp; Piloting</strong>
+                        <strong style="color:#a8ffcc;font-size:16px;font-weight:700;line-height:1.3;">Multi-Project Impact Portfolio</strong>
                     </div>
                     <div
                         style="display:flex;gap:16px;align-items:center;background:rgba(255,255,255,0.07);border-radius:10px;padding:22px 24px;border:1px solid rgba(255,255,255,0.1);">
                         <div
                             style="width:48px;height:48px;border-radius:10px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;">
                             🌍</div>
-                        <strong style="color:#a8ffcc;font-size:16px;font-weight:700;line-height:1.3;">Global Reach, Country-Level Action</strong>
+                        <strong style="color:#a8ffcc;font-size:16px;font-weight:700;line-height:1.3;">Community-Led, Globally Replicable</strong>
                     </div>
                     <div
                         style="display:flex;gap:16px;align-items:center;background:rgba(255,255,255,0.07);border-radius:10px;padding:22px 24px;border:1px solid rgba(255,255,255,0.1);">
@@ -867,20 +881,88 @@
 
         </div>
 
+        <!-- Our Projects -->
+        <div id="projects" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 28px rgba(4,21,43,0.22);">
+
+            <div style="background:linear-gradient(135deg,#04152b 0%,#0a2540 60%,#0b3060 100%);padding:52px 52px 48px;">
+                <p style="font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#c47a08;margin-bottom:12px;">GIAA Portfolio</p>
+                <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(22px,2.5vw,30px);margin-bottom:10px;font-weight:700;">Our Projects</h2>
+                <p style="color:#a8d4f0;font-size:15px;line-height:1.8;max-width:800px;margin-bottom:40px;">GIAA operates as a multi-project alliance. Each project addresses a distinct structural gap in sustainability, economic inclusion, or long-term governance — co-designed with local stakeholders and built to endure.</p>
+
+                <!-- Project Cards Grid -->
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;" class="mob-3col-outcomes">
+
+                    <!-- Project 1: PCAF -->
+                    <div style="background:linear-gradient(160deg,#062540 0%,#0b3a60 100%);border-radius:14px;border:1.5px solid rgba(126,200,245,0.3);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 28px rgba(0,0,0,0.35);">
+                        <div style="background:linear-gradient(90deg,#0b4280 0%,#0a6498 100%);padding:18px 24px 14px;display:flex;align-items:center;gap:14px;">
+                            <div style="width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🔄</div>
+                            <div>
+                                <p style="color:#7ec8f5;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">Flagship Project</p>
+                                <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:16px;font-weight:700;margin:0;line-height:1.25;">Post-Project Continuity &amp; Adoption Framework</h3>
+                            </div>
+                        </div>
+                        <div style="padding:22px 24px;flex:1;display:flex;flex-direction:column;gap:14px;">
+                            <p style="color:#a8d4f0;font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin:0;">PCAF · Governance &amp; Transition</p>
+                            <p style="color:#d4eef8;font-size:13.5px;line-height:1.8;margin:0;">A globally replicable framework that embeds structured transition planning, coordination, and continuity financing into development projects — ensuring governments and communities remain in control long after donor funding ends.</p>
+                            <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:4px;">
+                                <span style="background:rgba(11,66,128,0.5);border:1px solid rgba(126,200,245,0.35);color:#7ec8f5;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Governance</span>
+                                <span style="background:rgba(11,66,128,0.5);border:1px solid rgba(126,200,245,0.35);color:#7ec8f5;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">NIAC Function</span>
+                                <span style="background:rgba(11,66,128,0.5);border:1px solid rgba(126,200,245,0.35);color:#7ec8f5;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">PPSA</span>
+                                <span style="background:rgba(11,66,128,0.5);border:1px solid rgba(126,200,245,0.35);color:#7ec8f5;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Multi-Country</span>
+                            </div>
+                            <div style="margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);">
+                                <a href="#functions" style="display:inline-flex;align-items:center;gap:8px;color:#7ec8f5;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:0.3px;">
+                                    Explore PCAF
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Bhutanese for Bhutanese -->
+                    <div style="background:linear-gradient(160deg,#1a2e08 0%,#2a4a10 100%);border-radius:14px;border:1.5px solid rgba(109,219,168,0.35);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 28px rgba(0,0,0,0.35);">
+                        <div style="background:linear-gradient(90deg,#1a6030 0%,#0e8040 100%);padding:18px 24px 14px;display:flex;align-items:center;gap:14px;">
+                            <div style="width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🌿</div>
+                            <div>
+                                <p style="color:#6ddba8;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px;">Active Project · Bhutan</p>
+                                <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:16px;font-weight:700;margin:0;line-height:1.25;">Bhutanese for Bhutanese</h3>
+                            </div>
+                        </div>
+                        <div style="padding:22px 24px;flex:1;display:flex;flex-direction:column;gap:14px;">
+                            <p style="color:#6ddba8;font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin:0;">Women-Led · Agri Supply Chain</p>
+                            <p style="color:#d4eef8;font-size:13.5px;line-height:1.8;margin:0;">Bhutan produces premium organic food, yet its high-end hotels, restaurants, and aviation sector depend on imports. This women-led initiative standardises local produce, builds a certified supply chain, and bridges Bhutan's farmers with its hospitality and premium food market.</p>
+                            <div style="background:rgba(0,0,0,0.2);border-radius:10px;padding:14px 16px;border-left:3px solid #6ddba8;">
+                                <p style="color:#a8ffcc;font-size:12.5px;font-weight:700;margin:0 0 6px;">The Opportunity</p>
+                                <p style="color:#c8edd8;font-size:13px;line-height:1.7;margin:0;">Standardised processing, packaging &amp; cold-chain logistics connecting Bhutanese smallholder women farmers directly to premium domestic buyers — replacing imports with pride-of-origin products.</p>
+                            </div>
+                            <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:4px;">
+                                <span style="background:rgba(26,96,48,0.5);border:1px solid rgba(109,219,168,0.4);color:#6ddba8;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Women-Led</span>
+                                <span style="background:rgba(26,96,48,0.5);border:1px solid rgba(109,219,168,0.4);color:#6ddba8;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Supply Chain</span>
+                                <span style="background:rgba(26,96,48,0.5);border:1px solid rgba(109,219,168,0.4);color:#6ddba8;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Bhutan</span>
+                                <span style="background:rgba(26,96,48,0.5);border:1px solid rgba(109,219,168,0.4);color:#6ddba8;font-size:11px;padding:4px 10px;border-radius:12px;font-weight:600;">Food Systems</span>
+                            </div>
+                            <div style="margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);">
+                                <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;color:#6ddba8;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:0.3px;">
+                                    Partner with Us
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <!-- Vision + Mission -->
         <div class="two-col">
             <div class="highlight-box" id="vision">
                 <h2>Vision</h2>
-                <p>To create a global ecosystem where development projects continue to deliver impact beyond their
-                    initial lifecycle, becoming <strong style="color:var(--accent);">sustainable, scalable, and
-                        community-owned.</strong></p>
+                <p>A world where impact does not expire. GIAA envisions a global ecosystem where community-rooted projects — in governance, food systems, economic inclusion, and beyond — are designed from the outset to <strong style="color:var(--accent);">endure, replicate, and grow under local ownership.</strong></p>
             </div>
             <div class="card accent-card" id="mission">
                 <h2>Mission</h2>
-                <p>To co-design, pilot, and scale the <strong style="color:#ffd580;">Project Continuity and Adoption
-                        Framework (PCAF)</strong> — partnering with governments, donors, and development agencies to
-                    embed structured transition governance into national systems, so ministries become the long-term
-                    custodians of development outcomes.</p>
+                <p>To incubate, co-design, and scale <strong style="color:#ffd580;">high-impact sustainability projects</strong> that address structural gaps in local economies and development systems — partnering with governments, donors, women-led enterprises, and communities to build solutions that outlast every project cycle.</p>
             </div>
         </div>
 
@@ -900,9 +982,7 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#0b7a75;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(11,122,117,0.3);">
                         01</div>
                     <div><strong
-                            style="color:#6ddba8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Ensure
-                            Continuity</strong><span style="color:#d4eef8;font-size:15px;line-height:1.7;">Sustain
-                            high-impact projects beyond their funding cycles through structured adoption.</span></div>
+                            style="color:#6ddba8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Incubate High-Impact Projects</strong><span style="color:#d4eef8;font-size:15px;line-height:1.7;">Identify structural gaps in sustainability, inclusion, and governance — and co-design projects with local communities to address them.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(120,180,255,0.25);border-radius:12px;padding:26px;">
@@ -910,10 +990,9 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#0b4280;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(11,66,128,0.3);">
                         02</div>
                     <div><strong
-                            style="color:#7ec8f5;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Facilitate
-                            Structured Transition</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Enable seamless handover from funders
-                            to local systems and governments.</span></div>
+                            style="color:#7ec8f5;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Ensure
+                            Continuity Beyond Funding</strong><span
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Embed structured handover and long-term governance mechanisms so every project endures beyond its funding cycle.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(255,200,80,0.25);border-radius:12px;padding:26px;">
@@ -921,11 +1000,9 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#c47a08;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(196,122,8,0.3);">
                         03</div>
                     <div><strong
-                            style="color:#ffd580;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Strengthen
-                            Long-Term Sustainability</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Equip ministries and development
-                            partners with governance tools, coordination mechanisms, and technical frameworks to sustain
-                            project outcomes independently beyond funding cycles.</span></div>
+                            style="color:#ffd580;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Champion
+                            Local Ownership</strong><span
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Place communities, women entrepreneurs, and local institutions at the centre of project design, delivery, and long-term stewardship.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(200,160,255,0.25);border-radius:12px;padding:26px;">
@@ -933,10 +1010,9 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#6c3ba0;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(108,59,160,0.3);">
                         04</div>
                     <div><strong
-                            style="color:#d4aaff;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Promote
-                            Community Ownership</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Build local resilience and stewardship
-                            so communities lead their own outcomes.</span></div>
+                            style="color:#d4aaff;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Scale
+                            Replicable Models</strong><span
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Design every project to be replicable — so successful pilots become blueprints that other countries and regions can adopt.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(255,140,140,0.25);border-radius:12px;padding:26px;grid-column:span 2;">
@@ -944,11 +1020,9 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#b03060;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(176,48,96,0.3);">
                         05</div>
                     <div><strong
-                            style="color:#ffaab8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Maximize
+                            style="color:#ffaab8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Maximise
                             Return on Development Investment</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Prevent post-project decay and ensure
-                            every dollar invested continues to generate measurable impact long after the grant period
-                            ends.</span></div>
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Ensure every dollar invested in GIAA projects generates measurable, verifiable impact — for communities, investors, and the global development ecosystem.</span></div>
                 </div>
             </div>
         </div>
@@ -1057,9 +1131,10 @@
 
         <!-- Lifecycle Engagement Model -->
         <div class="card teal-card" id="functions">
+            <p style="font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#0db4b9;margin-bottom:10px;">GIAA Project 01 · Governance &amp; Transition</p>
             <h2>Project Continuity and Adoption Framework (PCAF)</h2>
             <p style="color:#a8d4f0;margin-bottom:20px;">The <strong style="color:#ffffff;">PCAF</strong> is GIAA's
-                operational model — a four-component framework that embeds transition planning, coordination, and
+                flagship governance project — a four-component framework that embeds transition planning, coordination, and
                 continuity financing into every stage of a project's lifecycle, so handover to ministry-led systems is
                 structured, not improvised.</p>
 
