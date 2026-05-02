@@ -220,9 +220,13 @@
             }
         }
 
-        @media (max-width: 700px) {
-            #projects .mob-3col-outcomes {
+        @media (max-width: 768px) {
+            .mob-flow-grid {
                 grid-template-columns: 1fr !important;
+            }
+            .mob-flow-grid > div[style*="padding:0 10px"] {
+                transform: rotate(90deg);
+                padding: 4px 0 !important;
             }
         }
 
@@ -540,16 +544,16 @@
             text-transform: uppercase;
         }
 
-        /* TEXT JUSTIFICATION */
+        /* TEXT ALIGNMENT */
         p {
-            text-align: justify;
+            text-align: left;
             font-size: 14.5px;
             line-height: 1.8;
             color: #d4eef8;
         }
 
         li {
-            text-align: justify;
+            text-align: left;
         }
 
         /* Preserve centered elements */
@@ -840,13 +844,13 @@
                     A Global Platform That Turns Development Gaps Into Enduring Solutions</h2>
                 <p style="color:#e8f8f2;font-size:15.5px;line-height:1.85;max-width:860px;margin-bottom:14px;">Global
                     Impact &amp; Adoption Alliance (GIAA) is a Canada-based nonprofit operating as a
-                    <strong style="color:#ffffff;">multi-domain impact platform</strong> — not a single-project
+                    <strong style="color:#ffffff;">multi-domain impact platform.</strong> Not a single-project
                     organisation. GIAA identifies structural gaps across global development systems and deploys targeted
                     solutions through three verticals: <strong style="color:#a8ffcc;">global policy frameworks</strong>,
                     <strong style="color:#a8ffcc;">community field models</strong>, and
                     <strong style="color:#a8ffcc;">knowledge &amp; capacity building</strong>.</p>
                 <p style="color:#c8edd8;font-size:14.5px;line-height:1.8;max-width:860px;margin-bottom:0;">Projects
-                    are applications of this platform — each co-designed with local stakeholders, grounded in evidence,
+                    are applications of this platform. Each is co-designed with local stakeholders, grounded in evidence,
                     and built to outlast the project cycle. GIAA's active initiatives include the
                     <strong style="color:#ffffff;">Post-Project Continuity &amp; Adoption Framework (PCAF)</strong> and
                     <strong style="color:#ffffff;">Bhutanese for Bhutanese</strong>, with further projects in
@@ -891,60 +895,86 @@
         </div>
 
         <!-- Narrative Flow: Problem → Gap → Platform → Solutions -->
-        <div style="background:linear-gradient(135deg,#04152b 0%,#080f20 100%);border-radius:14px;padding:52px 48px;box-shadow:0 6px 32px rgba(4,21,43,0.3);border:1px solid rgba(255,255,255,0.06);">
-            <p style="font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c47a08;margin-bottom:12px;">The Logic Behind GIAA</p>
-            <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(22px,2.5vw,28px);margin-bottom:36px;font-weight:700;max-width:700px;">From Global Problem to Systemic Solution</h2>
+        <div style="background:linear-gradient(135deg,#04152b 0%,#080f20 100%);border-radius:16px;padding:56px 52px 52px;box-shadow:0 8px 40px rgba(4,21,43,0.4);border:1px solid rgba(255,255,255,0.07);">
 
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;" class="mob-4col">
+            <!-- Section heading hierarchy -->
+            <p style="font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c47a08;margin-bottom:14px;">The Logic Behind GIAA</p>
+            <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(30px,3.5vw,42px);font-weight:700;margin-bottom:10px;line-height:1.2;">From Global Problem<br>to Systemic Solution</h2>
+            <p style="color:#7a9ab8;font-size:15px;line-height:1.7;max-width:600px;margin-bottom:52px;">Four steps. One coherent platform. Every GIAA decision traces back to this logic.</p>
 
-                <!-- Step 1 -->
-                <div style="padding:0 24px 0 0;position:relative;">
-                    <div style="width:40px;height:40px;border-radius:50%;background:#b03060;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;margin-bottom:16px;">01</div>
-                    <h3 style="color:#ffaab8;font-size:15px;font-weight:700;margin-bottom:10px;border-left:none;padding-left:0;margin-top:0;">The Problem</h3>
-                    <p style="color:#d4eef8;font-size:13.5px;line-height:1.75;margin:0;">Billions invested in development projects — yet most outcomes collapse within years of funding exit. Structural gaps in governance, markets, and knowledge destroy long-term value.</p>
+            <!-- Flow cards: single row with connector lines -->
+            <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:0;align-items:stretch;" class="mob-flow-grid">
+
+                <!-- Card 01 -->
+                <div style="background:linear-gradient(160deg,rgba(176,48,96,0.18) 0%,rgba(176,48,96,0.08) 100%);border:1.5px solid rgba(176,48,96,0.45);border-radius:14px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <span style="font-size:11px;font-weight:800;letter-spacing:2px;color:rgba(255,170,184,0.6);text-transform:uppercase;">Step</span>
+                        <span style="font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:rgba(255,170,184,0.2);line-height:1;">01</span>
+                    </div>
+                    <h3 style="font-family:'Playfair Display',serif;color:#ffaab8;font-size:20px;font-weight:700;margin:0;border-left:none;padding-left:0;line-height:1.25;">The Problem</h3>
+                    <div style="width:36px;height:3px;background:linear-gradient(90deg,#b03060,transparent);border-radius:2px;"></div>
+                    <p style="color:#c8dff0;font-size:13.5px;line-height:1.8;margin:0;flex:1;">Billions invested in development projects. Most outcomes collapse within years of funding exit. Structural gaps in governance, markets, and knowledge destroy long-term value.</p>
                 </div>
 
-                <!-- Arrow -->
-                <div style="display:flex;align-items:flex-start;padding-top:8px;justify-content:center;flex-shrink:0;">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <!-- Connector -->
+                <div style="display:flex;align-items:center;justify-content:center;padding:0 10px;">
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                    </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div style="padding:0 24px;position:relative;">
-                    <div style="width:40px;height:40px;border-radius:50%;background:#0b4280;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;margin-bottom:16px;">02</div>
-                    <h3 style="color:#7ec8f5;font-size:15px;font-weight:700;margin-bottom:10px;border-left:none;padding-left:0;margin-top:0;">The Gap</h3>
-                    <p style="color:#d4eef8;font-size:13.5px;line-height:1.75;margin:0;">No dedicated global platform exists to bridge policy frameworks, local field models, and institutional capacity into a single coherent system for sustainable impact.</p>
+                <!-- Card 02 -->
+                <div style="background:linear-gradient(160deg,rgba(11,66,128,0.25) 0%,rgba(11,66,128,0.1) 100%);border:1.5px solid rgba(11,66,128,0.6);border-radius:14px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <span style="font-size:11px;font-weight:800;letter-spacing:2px;color:rgba(126,200,245,0.5);text-transform:uppercase;">Step</span>
+                        <span style="font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:rgba(126,200,245,0.15);line-height:1;">02</span>
+                    </div>
+                    <h3 style="font-family:'Playfair Display',serif;color:#7ec8f5;font-size:20px;font-weight:700;margin:0;border-left:none;padding-left:0;line-height:1.25;">The Gap</h3>
+                    <div style="width:36px;height:3px;background:linear-gradient(90deg,#0b4280,transparent);border-radius:2px;"></div>
+                    <p style="color:#c8dff0;font-size:13.5px;line-height:1.8;margin:0;flex:1;">No dedicated global platform exists to bridge policy frameworks, local field models, and institutional capacity into a single coherent system for sustainable impact.</p>
                 </div>
 
-                <!-- Arrow -->
-                <div style="display:flex;align-items:flex-start;padding-top:8px;justify-content:center;flex-shrink:0;">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <!-- Connector -->
+                <div style="display:flex;align-items:center;justify-content:center;padding:0 10px;">
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                    </div>
                 </div>
 
-            </div>
-
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:32px;" class="mob-4col">
-
-                <!-- Step 3 -->
-                <div style="padding:0 24px 0 0;">
-                    <div style="width:40px;height:40px;border-radius:50%;background:#0b7a75;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;margin-bottom:16px;">03</div>
-                    <h3 style="color:#6ddba8;font-size:15px;font-weight:700;margin-bottom:10px;border-left:none;padding-left:0;margin-top:0;">GIAA as Platform</h3>
-                    <p style="color:#d4eef8;font-size:13.5px;line-height:1.75;margin:0;">GIAA operates as infrastructure — a multi-domain platform with three verticals that together address the full spectrum from global policy design to local adoption and knowledge transfer.</p>
+                <!-- Card 03 -->
+                <div style="background:linear-gradient(160deg,rgba(11,122,117,0.22) 0%,rgba(11,122,117,0.08) 100%);border:1.5px solid rgba(11,122,117,0.5);border-radius:14px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <span style="font-size:11px;font-weight:800;letter-spacing:2px;color:rgba(109,219,168,0.5);text-transform:uppercase;">Step</span>
+                        <span style="font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:rgba(109,219,168,0.15);line-height:1;">03</span>
+                    </div>
+                    <h3 style="font-family:'Playfair Display',serif;color:#6ddba8;font-size:20px;font-weight:700;margin:0;border-left:none;padding-left:0;line-height:1.25;">GIAA as Platform</h3>
+                    <div style="width:36px;height:3px;background:linear-gradient(90deg,#0b7a75,transparent);border-radius:2px;"></div>
+                    <p style="color:#c8dff0;font-size:13.5px;line-height:1.8;margin:0;flex:1;">GIAA operates as infrastructure: a multi-domain platform with three verticals that together address the full spectrum from global policy design to local adoption and knowledge transfer.</p>
                 </div>
 
-                <!-- Arrow -->
-                <div style="display:flex;align-items:flex-start;padding-top:8px;justify-content:center;flex-shrink:0;">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <!-- Connector -->
+                <div style="display:flex;align-items:center;justify-content:center;padding:0 10px;">
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <div style="width:1px;height:24px;background:rgba(255,255,255,0.08);"></div>
+                    </div>
                 </div>
 
-                <!-- Step 4 -->
-                <div style="padding:0 24px;">
-                    <div style="width:40px;height:40px;border-radius:50%;background:#c47a08;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;margin-bottom:16px;">04</div>
-                    <h3 style="color:#ffd580;font-size:15px;font-weight:700;margin-bottom:10px;border-left:none;padding-left:0;margin-top:0;">Projects as Proof</h3>
-                    <p style="color:#d4eef8;font-size:13.5px;line-height:1.75;margin:0;">Each GIAA initiative is a proof point — replicable, evidence-based, and designed to generate knowledge that feeds back into the platform and strengthens every future project.</p>
+                <!-- Card 04 -->
+                <div style="background:linear-gradient(160deg,rgba(196,122,8,0.2) 0%,rgba(196,122,8,0.07) 100%);border:1.5px solid rgba(196,122,8,0.5);border-radius:14px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <span style="font-size:11px;font-weight:800;letter-spacing:2px;color:rgba(255,213,128,0.5);text-transform:uppercase;">Step</span>
+                        <span style="font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:rgba(255,213,128,0.15);line-height:1;">04</span>
+                    </div>
+                    <h3 style="font-family:'Playfair Display',serif;color:#ffd580;font-size:20px;font-weight:700;margin:0;border-left:none;padding-left:0;line-height:1.25;">Projects as Proof</h3>
+                    <div style="width:36px;height:3px;background:linear-gradient(90deg,#c47a08,transparent);border-radius:2px;"></div>
+                    <p style="color:#c8dff0;font-size:13.5px;line-height:1.8;margin:0;flex:1;">Each GIAA initiative is a proof point. It is replicable, evidence-based, and designed to generate knowledge that feeds back into the platform and strengthens every future project.</p>
                 </div>
-
-                <div></div>
 
             </div>
         </div>
@@ -954,7 +984,7 @@
             <div style="background:linear-gradient(135deg,#04152b 0%,#0a2540 60%,#0b3060 100%);padding:52px 52px 48px;">
                 <p style="font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#c47a08;margin-bottom:12px;">GIAA Initiatives</p>
                 <h2 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:clamp(22px,2.5vw,30px);margin-bottom:10px;font-weight:700;">Three Verticals. One Platform.</h2>
-                <p style="color:#a8d4f0;font-size:15px;line-height:1.8;max-width:800px;margin-bottom:40px;">GIAA's work is organised across three solution domains — each addressing a distinct layer of the impact sustainability challenge. Projects live inside verticals, not the other way around.</p>
+                <p style="color:#a8d4f0;font-size:15px;line-height:1.8;max-width:800px;margin-bottom:40px;">GIAA's work is organised across three solution domains, each addressing a distinct layer of the impact sustainability challenge. Projects live inside verticals, not the other way around.</p>
 
                 <!-- Domain A -->
                 <div style="margin-bottom:32px;">
@@ -965,7 +995,7 @@
                             <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:18px;font-weight:700;margin:0;border-left:none;padding-left:0;">Global Systems &amp; Policy Frameworks</h3>
                         </div>
                     </div>
-                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">Governance models and policy frameworks that operate at scale — designed to be adopted by governments, embedded in national systems, and replicated across countries.</p>
+                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">Governance models and policy frameworks that operate at scale. They are designed to be adopted by governments, embedded in national systems, and replicated across countries.</p>
 
                     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;" class="mob-2col">
                         <!-- PCAF -->
@@ -975,7 +1005,7 @@
                                 <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:15px;font-weight:700;margin:0;border-left:none;padding-left:0;">Post-Project Continuity &amp; Adoption Framework</h3>
                             </div>
                             <div style="padding:18px 22px;flex:1;display:flex;flex-direction:column;gap:10px;">
-                                <p style="color:#d4eef8;font-size:13px;line-height:1.75;margin:0;">A four-component transition governance framework that embeds continuity financing, NIAC coordination, and structured handover into development projects — enabling ministries to become long-term custodians of outcomes.</p>
+                                <p style="color:#d4eef8;font-size:13px;line-height:1.75;margin:0;">A four-component transition governance framework that embeds continuity financing, NIAC coordination, and structured handover into development projects, enabling ministries to become long-term custodians of outcomes.</p>
                                 <div style="margin-top:auto;padding-top:12px;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;">
                                     <div style="display:flex;gap:6px;flex-wrap:wrap;">
                                         <span style="background:rgba(11,66,128,0.5);border:1px solid rgba(126,200,245,0.3);color:#7ec8f5;font-size:10.5px;padding:3px 9px;border-radius:10px;font-weight:600;">Governance</span>
@@ -988,7 +1018,7 @@
                         <!-- Future A -->
                         <div style="background:rgba(11,66,128,0.08);border-radius:12px;border:1.5px dashed rgba(126,200,245,0.18);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 24px;text-align:center;gap:10px;">
                             <div style="width:36px;height:36px;border-radius:50%;border:2px dashed rgba(126,200,245,0.3);display:flex;align-items:center;justify-content:center;color:rgba(126,200,245,0.4);font-size:20px;">+</div>
-                            <p style="color:rgba(126,200,245,0.5);font-size:12.5px;font-weight:600;margin:0;line-height:1.6;">Future framework initiatives — transition governance, sustainability systems, policy advisory models</p>
+                            <p style="color:rgba(126,200,245,0.5);font-size:12.5px;font-weight:600;margin:0;line-height:1.6;">Future framework initiatives: transition governance, sustainability systems, policy advisory models</p>
                             <a href="#contact" style="color:rgba(126,200,245,0.6);font-size:12px;font-weight:700;text-decoration:none;letter-spacing:0.3px;">Propose a project →</a>
                         </div>
                     </div>
@@ -1003,7 +1033,7 @@
                             <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:18px;font-weight:700;margin:0;border-left:none;padding-left:0;">Community &amp; Field Implementation Models</h3>
                         </div>
                     </div>
-                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">Ground-level projects that demonstrate what local ownership looks like in practice — women-led enterprises, supply chain transformation, and community-rooted economic models built for replication.</p>
+                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">Ground-level projects that demonstrate what local ownership looks like in practice. Women-led enterprises, supply chain transformation, and community-rooted economic models built for replication.</p>
 
                     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;" class="mob-2col">
                         <!-- B4B -->
@@ -1013,7 +1043,7 @@
                                 <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:15px;font-weight:700;margin:0;border-left:none;padding-left:0;">Bhutanese for Bhutanese</h3>
                             </div>
                             <div style="padding:18px 22px;flex:1;display:flex;flex-direction:column;gap:10px;">
-                                <p style="color:#d4eef8;font-size:13px;line-height:1.75;margin:0;">A women-led initiative standardising Bhutan's premium organic produce for the high-end hospitality market — replacing imports with certified, locally processed, packaged, and delivered products through a structured supply chain.</p>
+                                <p style="color:#d4eef8;font-size:13px;line-height:1.75;margin:0;">A women-led initiative standardising Bhutan's premium organic produce for the high-end hospitality market. It replaces imports with certified, locally processed, packaged and delivered products through a structured supply chain.</p>
                                 <div style="background:rgba(0,0,0,0.2);border-radius:8px;padding:10px 14px;border-left:3px solid #6ddba8;">
                                     <p style="color:#a8ffcc;font-size:12px;line-height:1.6;margin:0;font-weight:600;">Hotels · Restaurants · Aviation rely on imports despite Bhutan's rich local produce. GIAA bridges that gap.</p>
                                 </div>
@@ -1029,7 +1059,7 @@
                         <!-- Future B -->
                         <div style="background:rgba(26,96,48,0.06);border-radius:12px;border:1.5px dashed rgba(109,219,168,0.18);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 24px;text-align:center;gap:10px;">
                             <div style="width:36px;height:36px;border-radius:50%;border:2px dashed rgba(109,219,168,0.3);display:flex;align-items:center;justify-content:center;color:rgba(109,219,168,0.4);font-size:20px;">+</div>
-                            <p style="color:rgba(109,219,168,0.5);font-size:12.5px;font-weight:600;margin:0;line-height:1.6;">Future field models — local adoption pilots, cultural enterprise models, agri-processing initiatives</p>
+                            <p style="color:rgba(109,219,168,0.5);font-size:12.5px;font-weight:600;margin:0;line-height:1.6;">Future field models: local adoption pilots, cultural enterprise models, agri-processing initiatives</p>
                             <a href="#contact" style="color:rgba(109,219,168,0.6);font-size:12px;font-weight:700;text-decoration:none;letter-spacing:0.3px;">Propose a project →</a>
                         </div>
                     </div>
@@ -1044,7 +1074,7 @@
                             <h3 style="font-family:'Playfair Display',serif;color:#ffffff;font-size:18px;font-weight:700;margin:0;border-left:none;padding-left:0;">Knowledge, Training &amp; Capacity Building</h3>
                         </div>
                     </div>
-                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">The institutional layer that makes GIAA's other verticals sustainable — training programmes, toolkits, knowledge transfer systems, and capacity-building initiatives that equip governments, NGOs, and communities with the skills to lead independently.</p>
+                    <p style="color:#a8d4f0;font-size:13.5px;line-height:1.75;max-width:780px;margin-bottom:20px;">The institutional layer that makes GIAA's other verticals sustainable. It encompasses training programmes, toolkits, knowledge transfer systems, and capacity-building initiatives that equip governments, NGOs, and communities with the skills to lead independently.</p>
 
                     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;" class="mob-3col-outcomes">
                         <div style="background:rgba(196,122,8,0.07);border-radius:12px;border:1.5px dashed rgba(255,200,80,0.2);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 20px;text-align:center;gap:10px;">
@@ -1073,11 +1103,11 @@
         <div class="two-col">
             <div class="highlight-box" id="vision">
                 <h2>Vision</h2>
-                <p>A world where structural gaps in development systems are met with enduring, community-owned solutions. GIAA envisions a global platform where <strong style="color:var(--accent);">systems thinking, field implementation, and institutional knowledge</strong> work together — so no community is left behind when a project ends.</p>
+                <p>A world where structural gaps in development systems are met with enduring, community-owned solutions. GIAA envisions a global platform where <strong style="color:var(--accent);">systems thinking, field implementation, and institutional knowledge</strong> work together. No community is left behind when a project ends.</p>
             </div>
             <div class="card accent-card" id="mission">
                 <h2>Mission</h2>
-                <p>To operate as <strong style="color:#ffd580;">infrastructure for impact</strong> — building and scaling policy frameworks, community field models, and capacity-building systems that governments, donors, and local actors can adopt, replicate, and own. GIAA does not just run projects; it builds the conditions for impact to sustain itself.</p>
+                <p>To operate as <strong style="color:#ffd580;">infrastructure for impact.</strong> GIAA builds and scales policy frameworks, community field models, and capacity-building systems that governments, donors, and local actors can adopt, replicate, and own. GIAA does not just run projects; it builds the conditions for impact to sustain itself.</p>
             </div>
         </div>
 
@@ -1097,7 +1127,7 @@
                         style="min-width:44px;height:44px;border-radius:50%;background:#0b7a75;color:#ffffff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(11,122,117,0.3);">
                         01</div>
                     <div><strong
-                            style="color:#6ddba8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Incubate High-Impact Projects</strong><span style="color:#d4eef8;font-size:15px;line-height:1.7;">Identify structural gaps in sustainability, inclusion, and governance — and co-design projects with local communities to address them.</span></div>
+                            style="color:#6ddba8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Incubate High-Impact Projects</strong><span style="color:#d4eef8;font-size:15px;line-height:1.7;">Identify structural gaps in sustainability, inclusion, and governance. GIAA co-designs projects with local communities to address them.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(120,180,255,0.25);border-radius:12px;padding:26px;">
@@ -1127,7 +1157,7 @@
                     <div><strong
                             style="color:#d4aaff;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Scale
                             Replicable Models</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Design every project to be replicable — so successful pilots become blueprints that other countries and regions can adopt.</span></div>
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Design every project to be replicable. Successful pilots become blueprints that other countries and regions can adopt.</span></div>
                 </div>
                 <div
                     style="display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,0.07);border:1px solid rgba(255,140,140,0.25);border-radius:12px;padding:26px;grid-column:span 2;">
@@ -1137,7 +1167,7 @@
                     <div><strong
                             style="color:#ffaab8;font-size:16px;display:block;margin-bottom:6px;font-weight:700;">Maximise
                             Return on Development Investment</strong><span
-                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Ensure every dollar invested in GIAA projects generates measurable, verifiable impact — for communities, investors, and the global development ecosystem.</span></div>
+                            style="color:#d4eef8;font-size:15px;line-height:1.7;">Ensure every dollar invested in GIAA projects generates measurable, verifiable impact: for communities, investors, and the global development ecosystem.</span></div>
                 </div>
             </div>
         </div>
@@ -1249,7 +1279,7 @@
             <p style="font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#0db4b9;margin-bottom:10px;">GIAA Project 01 · Governance &amp; Transition</p>
             <h2>Project Continuity and Adoption Framework (PCAF)</h2>
             <p style="color:#a8d4f0;margin-bottom:20px;">The <strong style="color:#ffffff;">PCAF</strong> is GIAA's
-                flagship governance project — a four-component framework that embeds transition planning, coordination, and
+                flagship governance project. It is a four-component framework that embeds transition planning, coordination, and
                 continuity financing into every stage of a project's lifecycle, so handover to ministry-led systems is
                 structured, not improvised.</p>
 
@@ -1426,8 +1456,8 @@
         <div class="card teal-card" id="funding">
             <h2>Sector Continuity Fund Model</h2>
             <p style="color:#a8d4f0;margin-bottom:24px;">Instead of leaving sustainability to chance at project closure,
-                GIAA integrates two predictable funding streams — a design-stage allocation and a closeout optimisation
-                mechanism — coordinated at sector level through the NIAC Function, within existing government and donor
+                GIAA integrates two predictable funding streams: a design-stage allocation and a closeout optimisation
+                mechanism, coordinated at sector level through the NIAC Function, within existing government and donor
                 financial systems.</p>
 
             <!-- Critical governance notice -->
@@ -1468,7 +1498,7 @@
                         <p style="color:#ffffff;font-size:16px;font-weight:700;margin:0 0 10px;line-height:1.35;">
                             Sustainability Allocation at Design Stage</p>
                         <p style="color:#8ec8e8;font-size:14px;margin:0;line-height:1.7;">A 5–10% allocation built into
-                            project budgets from the outset — funding transition, adoption, and post-project continuity.
+                            project budgets from the outset, funding transition, adoption and post-project continuity.
                         </p>
                     </div>
 
